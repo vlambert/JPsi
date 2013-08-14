@@ -1,0 +1,75 @@
+References
+
+=== Quarkonia TF July 4 ===
+
+Y-News 05' [1]
+Speakers:	Ian P. Shipsey (Purdue University) , Fabrizio Palla (Univ. + INFN)
+Lists selection for phi' and Y.
+
+Common Vertex Probability
+https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCandVertexFit
+
+float vProb(TMath::Prob(vChi2,(int)vNDF));
+in
+http://cmssw.cvs.cern.ch/cgi-bin/cmssw.cgi/CMSSW/HeavyFlavorAnalysis/Onia2MuMu/src/Onia2MuMuPAT.cc?revision=1.21&view=markup
+
+
+[1] http://indico.cern.ch/getFile.py/access?contribId=0&resId=0&materialId=slides&confId=83376
+
+=== Selection ===
+
+Selection from JPsiAnalyzerPAT [1]:
+
+== Common for Global and Tracker Muons ==
+abs(eta) < 2.4 &
+(
+  (abs(eta) < 1.3 & pt > 3.3) ||
+  (1.3 < abs(eta) & abs(eta) < 2.2 & p > 2.9) ||
+  (2.2 < abs(eta) & pt > 0.8)
+)
+
+innerTrack.found > 11 &
+abs(innerTrack.d0) < 5.0 &
+abs(innerTrack.dz) < 20.0
+
+  Currently not used:
+  (
+    innerTrack.hitPattern.numberOfValidPixelHits > 2
+    ||
+    (innerTrack.hitPattern.numberOfValidPixelHits > 1 &
+    innerTrack.hitPattern.getLayer(innerTrack.hitPattern.getHitPattern(0) ) == 1
+    )
+  )
+
+
+== Global Muons ==
+globalTrack.chi2 / globalTrack.ndof < 20.0 &
+
+
+== Tracker Muons ==
+innerTrack.chi2 / innerTrack.ndof < 5.0 &
+muonID("TMLastStationAngTight") &
+
+  Currently not used:
+  muonID("TrackerMuonArbitrated")
+
+
+== J/Psi =
+common vertex probability > 0.001
+TMath::Prob(vChi2,(int)vNDF)
+
+perhaps the same as VertexCompositeCandidate::vertexNormalizedChi2() or
+TMath::Prob(VertexCompositeCandidate::vertexChi2, VertexCompositeCandidate::vertexNdof)
+
+D. Kovalskyi Fake Suppression [2]
+DataFormats/MuonReco V08-02-04-01
+• Include file DataFormats/MuonReco/interface/MuonSelectors.h
+• Function: bool muon::overlap( const reco::Muon& muon1, const
+reco::Muon& muon2, double pullX = 1.0, double pullY = 1.0 ) == false
+
+T. N. Kypreos
+remove di-muons with that share segments for a chamber in ME1/1a
+apply a second selection of min(Δ r) > 0.2 between segments attached to each muon
+
+[1] http://cmssw.cvs.cern.ch/cgi-bin/cmssw.cgi/CMSSW/HeavyFlavorAnalysis/Onia2MuMu/src/JPsiAnalyzerPAT.cc?revision=1.18&view=markup
+[2] http://indico.cern.ch/getFile.py/access?contribId=4&resId=0&materialId=slides&confId=88576

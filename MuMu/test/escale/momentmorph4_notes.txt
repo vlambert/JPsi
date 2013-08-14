@@ -1,0 +1,10 @@
+ 'EE_highR9_pt15to20', rrange = [0.5, 1, 1.5, 2, 2.5] + range(3, 7))
+plots0: NonLinear MomentMorph setting, mpar = {phor}
+plots1: NonLinear MomentMorph setting, mpar = sqrt(3^2 + {phor}^2)
+plots2: NonLinear MomentMorph setting, mpar = p0 + sqrt(p1^2 + p2^2*{phor}^2)
+plots3: Linear MomentMorph setting, mpar = p0 + sqrt(p1^2 + p2^2*{phor}^2)
+plots4: NonLinearLinFractions MomentMorph setting, mpar = p0 + sqrt(p1^2 + p2^2*{phor}^2)
+plots5: NonLinearPosFractions MomentMorph setting, mpar = p0 + sqrt(p1^2 + p2^2*{phor}^2)
+plots6: Linear MomentMorph setting, mpar = sqrt(3^2 + {phor}^2)
+plots7: Linear MomentMorph setting, mpar = {phor}
+

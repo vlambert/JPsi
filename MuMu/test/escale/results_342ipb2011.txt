@@ -1,0 +1,111 @@
+Binned 1/k Fit
+2010 data + MC
+                    Nov4ReReco     Barrel 1/k: 1.0031 +/- 0.0083
+        DYToMuMu_powheg_Fall10     Barrel 1/k: 0.9995 +/- 0.0015
+                relative scale     Barrel %  : 0.35 +/- 0.84
+                    Nov4ReReco    Endcaps 1/k: 0.9432 +/- 0.0270
+        DYToMuMu_powheg_Fall10    Endcaps 1/k: 0.9928 +/- 0.0030
+                relative scale    Endcaps %  : -4.96 +/- 2.71
+
+2011 data + MC, no pileup reweighing
+                      42x data     Barrel 1/k: 1.0010 +/- 0.0030
+                        42x MC     Barrel 1/k: 1.0048 +/- 0.0016
+                relative scale     Barrel %  :  -0.39 +/- 0.34
+                      42x data    Endcaps 1/k: 1.0027 +/- 0.0056
+                        42x MC    Endcaps 1/k: 1.0068 +/- 0.0030
+                relative scale    Endcaps %  :  -0.41 +/- 0.64
+
+2011 data + MC, with OOT pileup reweighing
+                      42x data     Barrel s: (0.23 +/- 0.29) %
+                        42x MC     Barrel s: (0.36 +/- 0.16) %
+                relative scale     Barrel %: (-0.12 +/- 0.33) %
+                      42x data    Endcaps s: (0.24 +/- 0.58) %
+                        42x MC    Endcaps s: (0.85 +/- 0.29) %
+                relative scale    Endcaps %: (-0.61 +/- 0.65) %
+
+2011 data + MC, with OOT pileup reweighing, R9 > 0.94 (0.95) in EB (EE)
+                      42x data     Barrel s: (-1.14 +/- 0.41) %
+                        42x MC     Barrel s: (-0.62 +/- 0.24) %
+                relative scale     Barrel %: (-0.52 +/- 0.48) %
+                      42x data    Endcaps s: (-1.31 +/- 0.98) %
+                        42x MC    Endcaps s: (-1.03 +/- 0.47) %
+                relative scale    Endcaps %: (-0.28 +/- 1.09) %
+
+2011 data + MC, with OOT pileup reweighing, R9 < 0.94 (0.95) in EB (EE)
+                      42x data     Barrel s: (1.11 +/- 0.39) %
+                        42x MC     Barrel s: (1.10 +/- 0.22) %
+                relative scale     Barrel %: (0.01 +/- 0.45) %
+                      42x data    Endcaps s: (0.76 +/- 0.77) %
+                        42x MC    Endcaps s: (1.65 +/- 0.35) %
+                relative scale    Endcaps %: (-0.89 +/- 0.84) %
+
+2011 data + MC, with OOT pileup reweighing, R9 > 0.94 (0.95) in EB (EE), pt in [10, 15]
+                      42x data     Barrel s: (-3.20 +/- 0.86) %
+                        42x MC     Barrel s: (-1.29 +/- 0.56) %
+                relative scale     Barrel %: (-1.91 +/- 1.03) %
+                      42x data    Endcaps s: (-6.17 +/- 3.88) %
+                        42x MC    Endcaps s: (-2.24 +/- 1.30) %
+                relative scale    Endcaps %: (-3.93 +/- 4.09) %
+
+2011 data + MC, with OOT pileup reweighing, R9 > 0.94 (0.95) in EB (EE), pt in [15, 25]
+                      42x data     Barrel s: (-1.76 +/- 0.75) %
+                        42x MC     Barrel s: (0.16 +/- 0.37) %
+                relative scale     Barrel %: (-1.92 +/- 0.83) %
+                      42x data    Endcaps s: (0.84 +/- 1.42) %
+                        42x MC    Endcaps s: (-0.23 +/- 0.82) %
+                relative scale    Endcaps %: (1.07 +/- 1.64) %
+
+2011 data + MC, with OOT pileup reweighing, R9 > 0.94 (0.95) in EB (EE), pt in [25, 999]
+                      42x data     Barrel s: (0.88 +/- 0.70) %
+                        42x MC     Barrel s: (-0.03 +/- 0.35) %
+                relative scale     Barrel %: (0.90 +/- 0.78) %
+                      42x data    Endcaps s: (-1.38 +/- 1.32) %
+                        42x MC    Endcaps s: (-0.70 +/- 0.68) %
+                relative scale    Endcaps %: (-0.68 +/- 1.48) %
+
+2011 data + MC, with OOT pileup reweighing, R9 < 0.94 (0.95) in EB (EE), pt in [25, 999]
+                   42x data     Barrel s: (3.05 +/- 0.79) %
+                        42x MC     Barrel s: (2.59 +/- 0.35) %
+                relative scale     Barrel %: (0.46 +/- 0.86) %
+                      42x data    Endcaps s: (1.98 +/- 1.58) %
+                        42x MC    Endcaps s: (2.79 +/- 0.52) %
+                relative scale    Endcaps %: (-0.81 +/- 1.67) %
+
+2011 data + MC, with OOT pileup reweighing, R9 < 0.94 (0.95) in EB (EE), pt in [15, 25]
+                      42x data     Barrel s: (2.02 +/- 0.55) %
+                        42x MC     Barrel s: (1.40 +/- 0.37) %
+                relative scale     Barrel %: (0.63 +/- 0.66) %
+                      42x data    Endcaps s: (2.60 +/- 1.18) %
+                        42x MC    Endcaps s: (2.50 +/- 0.55) %
+                relative scale    Endcaps %: (0.10 +/- 1.30) %
+
+2011 data + MC, with OOT pileup reweighing, R9 < 0.94 (0.95) in EB (EE), pt in [10, 15]
+                      42x data     Barrel s: (-1.22 +/- 0.85) %
+                        42x MC     Barrel s: (0.02 +/- 0.42) %
+                relative scale     Barrel %: (-1.25 +/- 0.95) %
+                      42x data    Endcaps s: (-2.23 +/- 1.54) %
+                        42x MC    Endcaps s: (-0.10 +/- 0.74) %
+                relative scale    Endcaps %: (-2.13 +/- 1.71) %
+
+
+JSON & files lumi = 331.6 / pb
+JSON file: lumiCalc_160404-165970_7TeV_PromptReco_Collisions11_JSON.out
+Datasets:
+
+Loose [70,110] GeV window
+--++ Yields and Purities
+      data       2293
+         z    2219.11       96.8%
+        zj      66.80       2.91%
+        tt       6.27      0.273%
+       qcd       0.81     0.0351%
+         w       0.02   0.000771%
+
+Tight [87.2, 95.2] GeV window
+--++ Yields and Purities
+      data       1751
+         z    1732.69       99.0%
+        zj      16.61      0.948%
+        tt       1.27     0.0723%
+       qcd       0.43     0.0248%
+         w       0.00          0%

@@ -1,0 +1,74 @@
+--++ Yields and Purities, 42X pt > 10 GeV
+         z    2259.05         97%
+        zj      64.86       2.79%
+        tt       3.64      0.156%
+       qcd       0.38     0.0165%
+         w       0.07    0.00297%
+
+--++ Yields and Purities, 42X pt > 20 GeV, EB
+         z     564.04       98.3%
+        zj       8.19       1.43%
+        tt       1.72        0.3%
+         w       0.05    0.00844%
+       qcd       0.00          0%
+
+--++ Yields and Purities, 42X pt > 20 GeV, EE
+         z     175.63       98.7%
+        zj       2.33       1.31%
+        tt       0.03      0.019%
+       qcd       0.00          0%
+         w       0.00          0%
+Scaling MC by:  1.07518486708
+Data: 178
+MC: 165.55292531545254
+
+--++ Yields and Purities, 42X pt > 20 GeV, EE, r9 < 0.94
+         z      89.23       98.1%
+        zj       1.74       1.91%
+        tt       0.03     0.0327%
+       qcd       0.00          0%
+         w       0.00          0%
+Scaling MC by:  0.945311322201
+Data: 91
+MC: 96.264582749439256
+
+
+
+EB high R9
+MC veto efficiency: 0.995855 + 0.00130825 - 0.00165753 (stat.)
+Data veto efficiency: 0.997788 + 0.00161708 - 0.00330468 (stat.)  +/- 0 (syst.)
+
+EB low R9
+MC veto efficiency: 0.976982 + 0.0032366 - 0.00356308 (stat.)
+Data veto efficiency: 0.987715 + 0.00474806 - 0.00638881 (stat.)  +/- 0.00358429 (syst.)
+
+EE high R9
+MC veto efficiency: 0.992945 + 0.00300728 - 0.00420859 (stat.)
+Data veto efficiency: 0.993056 + 0.00505938 - 0.0102529 (stat.)  +/- 6.09412e-05 (syst.)
+
+EE low R9
+MC veto efficiency: 0.933406 + 0.00793019 - 0.00856193 (stat.)
+Data veto efficiency: 0.929825 + 0.0178991 - 0.0212543 (stat.)  +/- 0.00996142 (syst.)
+
+========================================================
+ELECTRON VETO
+      MC                     DATA
+cat1  99.59 + 0.13 - 0.17    99.78 + 0.13 - 0.16
+cat2  97.70 + 0.32 - 0.37    98.77 + 0.47 - 0.64 +/- 0.36
+cat3  99.29 + 0.30 - 0.42    99.31 + 0.51 - 1.02 +/- 0.01
+cat4  93.34 + 0.79 - 0.86    93.0  + 1.8  - 2.1  +/- 1.0
+========================================================
+
+
+Conversion Veto
+      MC                     DATA
+EE    42.9 +/- 1.6           49.7 +/- 3.8 +/- 0.3
+EB    45.1 +/- 1.0           47.7 +/- 2.1 +/- 0.7
+
+EB pass R9 > 0.94
+
+MC veto efficiency: 0.429134 + 0.0155693 - 0.0154764 (stat.)
+Data veto efficiency: 0.497076 + 0.0380491 - 0.0380265 (stat.)  +/- 0.00349562 (syst.)
+
+MC veto efficiency: 0.451338 + 0.0100364 - 0.0100101 (stat.)
+Data veto efficiency: 0.476895 + 0.0214763 - 0.0214195 (stat.)  +/- 0.00656485 (syst.)

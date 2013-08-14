@@ -1,0 +1,49 @@
+EE
+MC PMV efficiency: 0.897221 + 0.00186743 - 0.00188768 (stat.)
+Data PMV efficiency: 0.859649 + 0.0414955 - 0.049757 (stat.)  +/- 0.0157916 (syst.)
+
+EB
+MC PMV efficiency: 0.977503 + 0.000466041 - 0.000472415 (stat.)
+Data PMV efficiency: 0.974249 + 0.00913669 - 0.0118981 (stat.)  +/- 0.00542363 (syst.)
+
+1-2 vtx
+MC PMV efficiency: 0.976545 + 0.000685198 - 0.000698476 (stat.)
+Data PMV efficiency: 0.97541 + 0.011715 - 0.0170899 (stat.)  +/- 0.00504068 (syst.)
+
+3+ vtx
+MC PMV efficiency: 0.978384 + 0.000631491 - 0.000643753 (stat.)
+Data PMV efficiency: 0.981818 + 0.0102228 - 0.0164022 (stat.)  +/- 0.00556443 (syst.)
+
+pt 5-10
+MC PMV efficiency: 0.979253 + 0.000719451 - 0.000736109 (stat.)
+Data PMV efficiency: 0.990196 + 0.00712861 - 0.0143735 (stat.)  +/- 0.00665084 (syst.)
+
+pt 10-20
+MC PMV efficiency: 0.979041 + 0.000704376 - 0.000720166 (stat.)
+Data PMV efficiency: 0.948718 + 0.021385 - 0.0291416 (stat.)  +/- 0.00393807 (syst.)
+
+EB pt > 20 GeV
+MC PMV efficiency: 0.971364 + 0.00113435 - 0.00116419 (stat.)
+Data PMV efficiency: 0.980392 + 0.0141609 - 0.0280669 (stat.)  +/- 0.000461694 (syst.)
+
+== Narrow mass window (m-90) < 12.5 ==
+EE
+MC PMV efficiency: 0.897196 + 0.00188111 - 0.00190165 (stat.)
+Data PMV efficiency: 0.877193 + 0.0388521 - 0.04754 (stat.)  +/- 0.0142848 (syst.)
+
+EB
+MC PMV efficiency: 0.977489 + 0.000469241 - 0.0004757 (stat.)
+Data PMV efficiency: 0.974026 + 0.00921483 - 0.0119986 (stat.)  +/- 0.00513433 (syst.)
+
+== Loose mass window (m-90) < 17.5 ==
+EE
+MC PMV efficiency: 0.897315 + 0.00185658 - 0.00187661 (stat.)
+Data PMV efficiency: 0.87931 + 0.038223 - 0.0468147 (stat.)  +/- 0.0162224 (syst.)
+
+
+EB
+MC PMV efficiency: 0.977601 + 0.0004626 - 0.000468908 (stat.)
+Data PMV efficiency: 0.974249 + 0.00913669 - 0.0118981 (stat.)  +/- 0.005679 (syst.)
+
+
+

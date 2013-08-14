@@ -1,0 +1,6 @@
+#!/bin/env bash
+## This is just a wrapper around a python script
+
+# PYTHON_SCRIPT=JPsi/MuMu/python/phosphor/interface.py
+PYTHON_SCRIPT=JPsi/MuMu/test/escale/phosphor/phosphormodel5_test10.py
+python -i $CMSSW_BASE/src/$PYTHON_SCRIPT $@

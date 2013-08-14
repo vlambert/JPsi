@@ -1,0 +1,71 @@
+#!/bin/bash
+#
+# request Bourne shell as shell for job
+#$ -S /bin/sh
+# Name of the job will be
+#$ -N {job_name}
+# Name of the log file will be
+#$ -o {output_dir}/{job_name}.log
+# Combine output/error messages into one file
+#$ -j y
+## Submit to only specific queues
+#$ -q all.q@compute-0-1.local,all.q@compute-0-14.local,all.q@compute-0-2.local,all.q@compute-1-0.local,all.q@compute-1-2.local,all.q@compute-1-3.local,all.q@compute-1-4.local,all.q@compute-1-5.local,all.q@compute-1-7.local,all.q@t3-susy.ultralight.org
+
+## Complete list of queues:
+## all.q@compute-0-0.local,all.q@compute-0-1.local,all.q@compute-0-14.local,all.q@compute-0-2.local,all.q@compute-0-3.local,all.q@compute-0-4.local,all.q@compute-0-5.local,all.q@compute-0-6.local,all.q@compute-1-0.local,all.q@compute-1-2.local,all.q@compute-1-3.local,all.q@compute-1-4.local,all.q@compute-1-5.local,all.q@compute-1-6.local,all.q@compute-1-7.local,all.q@compute-1-8.local,all.q@compute-1-9.local,all.q@t3-susy.ultralight.org
+
+## Medium list of ques excluding obviously bad queues:
+# all.q@compute-0-1.local,all.q@compute-0-14.local,all.q@compute-0-2.local,all.q@compute-0-3.local,all.q@compute-0-4.local,all.q@compute-0-5.local,all.q@compute-1-0.local,all.q@compute-1-2.local,all.q@compute-1-3.local,all.q@compute-1-4.local,all.q@compute-1-5.local,all.q@compute-1-7.local,all.q@compute-1-8.local,all.q@compute-1-9.local,all.q@t3-susy.ultralight.org
+
+## Short list of queues that seems to be running
+# all.q@compute-0-1.local,all.q@compute-0-14.local,all.q@compute-0-2.local,all.q@compute-1-0.local,all.q@compute-1-2.local,all.q@compute-1-3.local,all.q@compute-1-4.local,all.q@compute-1-5.local,all.q@compute-1-7.local,all.q@t3-susy.ultralight.org
+
+
+
+echo "Starting PHOSHPOR SGE job {job_name} on $HOSTNAME."
+
+CMSSW_SETUP_SCRIPT=/home/veverka/bin/fsr-apr12-cmssw42x-osg.sh
+JOB_DIR=/wntmp/veverka/{job_name}
+# JOB_SCRIPT=JPsi/MuMu/test/escale/phosphormodel5_test9.py
+JOB_SCRIPT=JPsi/MuMu/test/escale/phosphor/phosphormodel5_test10.py
+JOB_ARGS=( -b {job_name} )
+OUTPUT_DIR={output_dir}
+
+## Setup CMSSW
+. $CMSSW_SETUP_SCRIPT || {{ 
+    echo "Cannot source $CMSSW_SETUP_SCRIPT" >2
+    exit 1 
+}}
+
+## Create work area
+if [[ ! -d $JOB_DIR ]]; then
+    mkdir -p $JOB_DIR
+fi
+
+## Move to work area
+cd $JOB_DIR || {{
+    echo "Cannot cd to $JOB_DIR" >2
+    exit 2
+}}
+
+## Run the script
+python $CMSSW_BASE/src/$JOB_SCRIPT ${{JOB_ARGS[@]}}
+
+## Create PDF files for EPS figures
+# for EPS in $JOB_DIR/*.eps; do
+#     ps2pdf -dEPSCrop $EPS
+# done
+
+## Copy the outputs
+echo "Results in $JOB_DIR:"
+ls -l $JOB_DIR
+cp -r $JOB_DIR $OUTPUT_DIR || {{ 
+    echo "Cannot copy \`$JOB_DIR' to \`$OUTPUT_DIR'" >2
+    exit 2
+}}
+
+## Clean up
+rm -rf $JOB_DIR
+
+echo 'Exitting PHOSHPOR OSG job test with success!'
+exit 0

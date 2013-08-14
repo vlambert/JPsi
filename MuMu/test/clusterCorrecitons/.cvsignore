@@ -1,0 +1,10 @@
+*.root *.out
+*.tgz
+*.png
+*.txt
+*.dat
+*.json
+*.log
+1?-??-??
+.DS_Store
+

@@ -1,0 +1,51 @@
+# request Bourne shell as shell for job
+#$ -S /bin/sh
+#$ -cwd
+
+echo "BLABLABLA "
+
+WORKDIR=/home/cmorgoth/phosphor/CMSSW_4_2_8_patch7/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface	    		
+			
+# find out host name
+hostname -f
+# where are we?
+pwd
+			
+#
+#export SCRAM_ARCH=slc5_amd64_gcc462
+cd /home/cmorgoth/phosphor/
+source fsr-jun11-cmssw42x.sh
+cd $WORKDIR
+
+cmsenv
+
+###################################
+#############Set up################
+################################## 
+
+Det="EE"
+TreeVer="sixie"
+Data="data"
+R9Low=0.94
+R9High=999
+PtLow=25
+PtHigh=31
+		
+# make directory where to output root file
+# mkdir -p /wntmp/jduarte/model1/
+# run CMSSW job
+
+cd $2
+echo $2 
+ echo $3
+pwd
+
+###################################	
+#####EXECUTING THE SCRIPT##########
+###################################
+
+./../../../Phosphor_Interface_ExpFit.py -i --exp_bkg True --DataType $Data --DetectorType $Det --treeversion $TreeVer \
+--R9Low $R9Low --R9High $R9High --PtLow $PtLow --PtHigh $PtHigh >\
+ log_$Data"_"$Det"_"$TreeVer"_R9Low"$R9Low"_R9High"$R9High"_PtLow"$PtLow"_PtHigh"$PtHigh.txt
+# time cmsRun VECBOSPYTHONFILE
+			

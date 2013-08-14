@@ -1,0 +1,6 @@
+*.root *.out
+*.tgz
+*.png
+*.json
+*_C.d
+plots*

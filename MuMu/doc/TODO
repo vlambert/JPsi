@@ -1,0 +1,27 @@
+TODO
+----
+o Soft photons
+o Propagate errors on E(ecal) vs E(muons) (done, need to do UBML to properly weighted E(gamma)/E(mu)
+o Do full monte carlo study
+o Understand the contributions of inner and outer brems
+  - check sim candidates in MC (is outer brem more often at deta/dphi < 1
+o Muon foot print
+  - muon energy deposition spectra in ECAL and HCAL
+  - check Ashok's paper
+  - see how MC performs
+  - Does muon cross any crystals that are connected to the clusters of the photon?
+o Pt(near mu) / Pt(gamma)
+o Photon timing
+o Other photon flags
+o Eta(gamma) assymmetry in observed candidates
+o Muon kinematics
+o Show actual values of Delta R
+o Apply photon ID
+  - check idea with Neyman-Pearson of the eta-profile
+  - understand sigmaIetaIeta: Why is the weight computed the way it is?
+  - Where does the max (4.7, -log(E_i/E) come from? (Sam Harper?)
+o J/psi's
+o Y's
+
+
+[1] https://hypernews.cern.ch/HyperNews/CMS/get/ewk-electrons/96.html

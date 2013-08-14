@@ -1,0 +1,56 @@
+COLLISIONS
+
+Hot channel list for energy in [8, 200], |1-swissCross| < 1e-8
+counts iz*ix  iy (10 hottest)
+   203    60  43
+   172    40  56
+   158   -56  61
+   146   -41  58
+   144   -61  56
+   137    41  58
+   133    58  60
+   131    42  59
+   130    41  43
+   120    45  40
+--
+Hot channel list for energy > 200, |1-swissCross| < 1e-8
+counts iz*ix  iy (10 hottest)
+     7    30  84
+Channels with log10(occupancy) > 11/3 - r/12 & r >= 20:
+counts iz*ix  iy (10 hottest)
+   138    55  91
+     9    -9  67
+     8   -10  68
+     8    -9  69
+     7    -8  34
+     7    -8  70
+     7    30  84
+     6   -25  88
+     5   -83  67
+     5   -26  87
+
+COSMICS
+--
+Hot channel list for energy in [8, 200], |1-swissCross| < 1e-8
+counts iz*ix  iy (10 hottest)
+   511   -11  46
+   133    55  91 <-- SHOWS UP IN COLLISIONS
+   103   -45  79
+--
+Hot channel list for energy > 200, |1-swissCross| < 1e-8
+counts iz*ix  iy (10 hottest)
+   311    30  84
+     4   -98  55
+     1    29  10
+Channels with log10(occupancy) > 11/3 - r/12 & r >= 20:
+counts iz*ix  iy (10 hottest)
+  1787    55  91
+   516   -11  46
+   311    30  84 <-- SHOWS UP IN COLLISIONS
+   117   -45  79
+     4   -98  55
+     2    76  11
+     1   -62  93
+     1   -45   1
+     1   -14  20
+     1    29  10

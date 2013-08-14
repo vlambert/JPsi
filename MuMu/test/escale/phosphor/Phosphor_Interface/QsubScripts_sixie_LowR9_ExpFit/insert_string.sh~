@@ -1,0 +1,8 @@
+#!/bin/bash
+     
+for fl in *.sge; do
+    mv $fl $fl.old
+    sed '/gawk/a RESULTS=yyv3' $fl.old > $fl
+    sed '/Results/a LOGS=yyv3_log' $fl > $fl
+    rm -f $fl.old
+done

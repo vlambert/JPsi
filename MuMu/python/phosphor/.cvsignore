@@ -1,0 +1,14 @@
+__init__.py
+*.root *.out
+*.tgz
+*.eps *.png
+*.json
+*_C.d
+plots*
+11-??-??
+*.log
+.DS_Store
+
+*.*~
+*.pyc
+*.*#
