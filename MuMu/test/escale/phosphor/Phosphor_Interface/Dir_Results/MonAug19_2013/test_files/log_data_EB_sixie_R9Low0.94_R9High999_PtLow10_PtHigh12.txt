@@ -1,0 +1,9 @@
+DEBUG+++++++++++++++DEBUG0
+DEBUG+++++++++++++++DEBUG1
+DEBUG+++++++++++++++DEBUG10
+Setting ROOT's style to CMS Style...
+DEBUG+++++++++++++++DEBUG2
+DEBUG+++++++++++++++DEBUG3
+DEBUG+++++++++++++++DEBUG1
+ARGV      : ['-i', '--exp_bkg', 'True', '--DataType', 'data', '--DetectorType', 'EB', '--treeversion', 'sixie', '--R9Low', '0.94', '--R9High', '999', '--PtLow', '10', '--PtHigh', '12']
+********CUTS:  ['phoIsEB', 'phoR9 >= 0.94', 'phoR9 < 999', 'phoPt >= 10', 'phoPt < 12']

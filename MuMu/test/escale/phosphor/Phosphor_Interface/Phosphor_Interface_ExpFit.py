@@ -35,7 +35,7 @@ def main():
     
     print 'ARGV      :', sys.argv[1:]
     try:
-        options, remainder = getopt.gnu_getopt(sys.argv[1:], 'o:c:vdih', ['cfg_file=','output=','verbose','debug','DataType=','DetectorType=','treeversion=','R9Low=','R9High=','PtLow=','PtHigh=','exp_bkg','help',])
+        options, remainder = getopt.gnu_getopt(sys.argv[1:], 'o:c:vdih', ['cfg_file=','output=','verbose','debug','DataType=','DetectorType=','treeversion=','NV=','R9Low=','R9High=','PtLow=','PtHigh=','exp_bkg','help',])
     except getopt.GetoptError, err:
         # print help information and exit:
         print str(err) # will print something like "option -a not recognized"
@@ -107,6 +107,20 @@ def main():
             if debug:
                 print '===CUTS===', Globals.cuts
             continue
+        elif opt == '--NV':
+	    if arg == 'High':
+	        nv = '_HighNV'
+		Globals.cuts.append('NV > 18')
+		continue
+	    elif arg == 'Low':
+		nv = '_LowNV'
+		Globals.cuts.append('NV <= 18')
+		continue
+	    elif arg == 'NULL':
+		nv = ''
+		continue	
+    
+
 	elif opt in ('-h','--help'):
             print '================HERE THE HELP WILL BE PUT!!! HAHA===================='
             sys.exit(2)
@@ -121,8 +135,8 @@ def main():
     if Globals.CmdFlag == True:
 
         print "********CUTS: ", Globals.cuts
-	Globals.name = Globals.DataType + "_" + Globals.DetectorType + "_" + Globals.model_tree_version + r9low + r9high + ptlow + pthigh #+ dilepcut
-	Globals.latex_title = Globals.DataType + ', ' + Globals.DetectorType + ', E_{T}^{#gamma} [%s,%s]'%(ptlow1 ,pthigh1)
+	Globals.name = Globals.DataType + "_" + Globals.DetectorType + "_" + Globals.model_tree_version + nv + r9low + r9high + ptlow + pthigh #+ dilepcut
+	Globals.latex_title = Globals.DataType + ', ' + Globals.DetectorType + ", "+ nv + ', E_{T}^{#gamma} [%s,%s]'%(ptlow1 ,pthigh1)
 
 	Globals.cuts.append('mmMass + mmgMass < 180')
         Globals.cuts.append('minDeltaR < 1.5')

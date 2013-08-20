@@ -5,11 +5,11 @@ import JPsi.MuMu.common.clusterCorrections as clusterCorrs
 from JPsi.MuMu.common.basicRoot import *
 
 _hostname = socket.gethostname()
-if (_hostname == 't3-susy.ultralight.org'
+if (_hostname == 't3-higgs.ultralight.org'
     or ('compute-' in _hostname and '.local' in _hostname)) :
     ## Path for the t3-susy
     ##_path = '/raid2/veverka/esTrees/'#original place changed after raid2 problem
-    _path = '/mnt/hadoop/user/veverka/esTrees/'
+    _path = '/mnt/hadoop/store/user/vlambert/MuMuGamma/'
     ##_path = '/home/cmorgoth/ZmumuGammaData/sixie_2012_hgg_regresion_v3/'
     ##_path = '/home/cmorgoth/scratch/CMSSW_5_2_5/src/UserCode/CPena/src/PhosphorCorrFunctor/MuonCorrectedTrees/'##MuonCorrectedTrees 2011 and 2012
     # _path = '/home/cmorgoth/scratch/CMSSW_5_2_5/src/UserCode/CPena/src/PhosphorCorrFunctor/GaussSmearingTrees'##Test for Gaussian Smearing
@@ -478,8 +478,8 @@ _files['sixie'] = {
         #'data': [ ( 'ZmumuGammaNtuple_Run2012AB_Jun29Rereco.root' ) ],#Original Line
         #'z'   : [ ( 'ZmumuGammaNtuple_DYM50_52X.root' ) ],#Original Line
         #THIS LINE IS USED AS CLOSURE TEST(Must Comment other MC->z)        
-    'z': [('MC_sixie_muon_corr_2012.root')],#Muon Corrected MC
-    'data': [('Data_sixie_muon_corr_2012.root')],#Muon Corrected data   
+    'z': [('MC/small_reweight.root')],
+    'data': [('Data/ZmumuGammaNtuple_Full2012_MuCorr.root')],
     
     }
 
@@ -572,6 +572,7 @@ def getChains(version='v4'):
         mu2Phi Mu2Phi
         pileup.weight Weight
         minDeltaR MinDeltaR
+        NV NVertices
         isFSR IsFSR'''.split('\n')
 
     

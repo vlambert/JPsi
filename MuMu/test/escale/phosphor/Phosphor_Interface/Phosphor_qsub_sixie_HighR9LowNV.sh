@@ -3,8 +3,8 @@
 QSUBDIR=/home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/QsubScripts_sixie_HighR9_ExpFit_LNV
 
 NEWDIR=`date | gawk '{ print $1 $2 $3"_" $6 }'`
-RESULTS=LowNV_2012Full_HighR9
-LOGS=LowNV_2012Full_HighR9_Logs
+RESULTS=LowNV_HighR9
+LOGS=LowNV_HighR9_Logs
 TreeVer="sixie"
 
 RESDIR=Dir_Results
@@ -41,9 +41,11 @@ for qfiles in $QSUBDIR/*.sge; do
     if [ -a $SGEFILE ] 
 	then 
 	echo "QSUB"
-
-	qsub -j y -o $RESDIR/$NEWDIR/$LOGS -q all.q@compute-1-5.local,all.q@compute-0-1.local,all.q@compute-0-2.local,all.q@compute-0-6.local,all.q@compute-1-0.local,all.q@compute-1-4.local,all.q@compute-1-7.local,all.q@compute-1-3.local,all.q@compute-1-2.local,all.q@compute-1-6.local $SGEFILE  -- $RESDIR/$NEWDIR/$RESULTS $TreeVer;
-	#qsub -j y -o $NEWDIR/$LOGS -q all.q@compute-1-5.local,all.q@compute-1-3.local,all.q@compute-0-1.local,all.q@compute-0-0.local $SGEFILE  -- $NEWDIR/$RESULTS $TreeVer;
+	# For t3-susy
+	#qsub -j y -o $RESDIR/$NEWDIR/$LOGS -q all.q@compute-1-5.local,all.q@compute-0-1.local,all.q@compute-0-2.local,all.q@compute-0-6.local,all.q@compute-1-0.local,all.q@compute-1-4.local,all.q@compute-1-7.local,all.q@compute-1-3.local,all.q@compute-1-2.local,all.q@compute-1-6.local $SGEFILE  -- $RESDIR/$NEWDIR/$RESULTS $TreeVer;
+	#For t3-higgs
+        qsub -j y -o $RESDIR/$NEWDIR/$LOGS -q all.q@compute-3-2.local,all.q@compute-3-3.local,all.q@compute-3-4.local,all.q@compute-3-9.local,all.q@compute-3-10.local,all.q@compute-3-12.local $SGEFILE -- $RESDIR/$NEWDIR/$RESULTS $TreeVer;
+#qsub -j y -o $NEWDIR/$LOGS -q all.q@compute-1-5.local,all.q@compute-1-3.local,all.q@compute-0-1.local,all.q@compute-0-0.local $SGEFILE  -- $NEWDIR/$RESULTS $TreeVer;
 #qsub -j y -o $NEWDIR/$LOGS -q all.q@compute-1-2.local $SGEFILE  -- $NEWDIR/$RESULTS $TreeVer;
 	#sdfdf
 

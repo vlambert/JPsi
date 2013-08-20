@@ -26,6 +26,7 @@ cmsenv
 Det="EB"
 TreeVer="sixie"
 Data="mc"
+NV="Low"
 R9Low=0
 R9High=0.94
 PtLow=20
@@ -43,8 +44,8 @@ pwd
 #####EXECUTING THE SCRIPT##########
 ###################################
 
-./../../../Phosphor_Interface_ExpFit_LNV.py -i --exp_bkg True --DataType $Data --DetectorType $Det --treeversion $TreeVer \
---R9Low $R9Low --R9High $R9High --PtLow $PtLow --PtHigh $PtHigh >\
- log_$Data"_"$Det"_"$TreeVer"_R9Low"$R9Low"_R9High"$R9High"_PtLow"$PtLow"_PtHigh"$PtHigh.txt
+./../../../Phosphor_Interface_ExpFit.py -i --exp_bkg True --DataType $Data --DetectorType $Det --treeversion $TreeVer \
+--NV $NV --R9Low $R9Low --R9High $R9High --PtLow $PtLow --PtHigh $PtHigh >\
+ log_$Data"_"$Det"_"$TreeVer"_"$NV"NV""_R9Low"$R9Low"_R9High"$R9High"_PtLow"$PtLow"_PtHigh"$PtHigh.txt
 # time cmsRun VECBOSPYTHONFILE
 			
