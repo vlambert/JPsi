@@ -1,0 +1,5 @@
+#Period(2011,2012)=(0,1) DATA(mc,data)=(0,1) Detector(EB,EE)=(0,1) R9(Incl, high, low)=(0,1,2) Pt(0,1,2,3,4,5) Correction(scale,resolution)=(0,1)
+1 0 0 2 3 0 0.63 0.002
+1 1 0 2 3 0 0.82 0.003
+1 0 0 2 3 1 0.50 0.001
+1 1 0 2 3 1 0.97 0.004

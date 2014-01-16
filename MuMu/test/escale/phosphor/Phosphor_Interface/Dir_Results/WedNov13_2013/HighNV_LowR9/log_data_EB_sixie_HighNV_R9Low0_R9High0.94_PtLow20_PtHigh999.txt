@@ -1,0 +1,61 @@
+DEBUG+++++++++++++++DEBUG0
+DEBUG+++++++++++++++DEBUG1
+DEBUG+++++++++++++++DEBUG10
+Setting ROOT's style to CMS Style...
+DEBUG+++++++++++++++DEBUG2
+DEBUG+++++++++++++++DEBUG3
+DEBUG+++++++++++++++DEBUG1
+ARGV      : ['-i', '--exp_bkg', 'True', '--DataType', 'data', '--DetectorType', 'EB', '--treeversion', 'sixie', '--NV', 'High', '--R9Low', '0', '--R9High', '0.94', '--PtLow', '20', '--PtHigh', '999']
+********CUTS:  ['phoIsEB', 'NV > 18', 'phoR9 >= 0', 'phoR9 < 0.94', 'phoPt >= 20', 'phoPt < 999']
+======COMMNAD LINE CONFIGURATION========= ===============CUTS====================== ['phoIsEB', 'NV > 18', 'phoR9 >= 0', 'phoR9 < 0.94', 'phoPt >= 20', 'phoPt < 999', 'mmMass + mmgMass < 180', 'minDeltaR < 1.5', 'mmgMass > 52', 'mu1Pt > 15', 'mu2Pt > 10']
+====================Model Tree Version=========================== sixie
+===================Name=========================== data_EB_sixie_HighNV_R9Low_0_R9high_0.94_PtLow_20_PtHigh_999
+===================Name2=========================== data_EB_sixie_HighNV_R9Low_0_R9high_0.94_PtLow_20_PtHigh_999
+===================EXP BKG=========================== 
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'plot' created with bounds [70,110]
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit' created with bounds [60,120]
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'tails' created with bounds [60,120]
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'peak' created with bounds [80,100]
+Loading  z : MC/small_reweight.root
+Loading  data : Data/new/MuMuGamma_Data.root
+version in 'sixie sixie2 sixie3'.split()
+z <ROOT.TChain object ("ZmumuGammaEvent") at 0x12754dd0>
+ch sixie:  <ROOT.TChain object ("ZmumuGammaEvent") at 0x12754dd0>
+====es_name:  mmMass sixie_name:   DileptonMass
+====es_name:  mmgMass sixie_name:   Mass
+====es_name:  phoEta sixie_name:   PhotonEta
+====es_name:  phoPhi sixie_name:   PhotonPhi
+====es_name:  phoGenE sixie_name:   GenPhoE
+====es_name:  phoIsEB sixie_name:   PhotonIsEB
+====es_name:  phoR9 sixie_name:   PhotonR9
+====es_name:  phoPt sixie_name:   PhotonPt
+====es_name:  mu1Pt sixie_name:   Mu1Pt
+====es_name:  mu2Pt sixie_name:   Mu2Pt
+====es_name:  mu1Eta sixie_name:   Mu1Eta
+====es_name:  mu2Eta sixie_name:   Mu2Eta
+====es_name:  mu1Phi sixie_name:   Mu1Phi
+====es_name:  mu2Phi sixie_name:   Mu2Phi
+====es_name:  pileup.weight sixie_name:   Weight
+====es_name:  minDeltaR sixie_name:   MinDeltaR
+====es_name:  NV sixie_name:   NVertices
+====es_name:  isFSR sixie_name:   IsFSR
+data <ROOT.TChain object ("ZmumuGammaEvent") at 0x12488690>
+ch sixie:  <ROOT.TChain object ("ZmumuGammaEvent") at 0x12488690>
+====es_name:  mmMass sixie_name:   DileptonMass
+====es_name:  mmgMass sixie_name:   Mass
+====es_name:  phoEta sixie_name:   PhotonEta
+====es_name:  phoPhi sixie_name:   PhotonPhi
+====es_name:  phoGenE sixie_name:   GenPhoE
+====es_name:  phoIsEB sixie_name:   PhotonIsEB
+====es_name:  phoR9 sixie_name:   PhotonR9
+====es_name:  phoPt sixie_name:   PhotonPt
+====es_name:  mu1Pt sixie_name:   Mu1Pt
+====es_name:  mu2Pt sixie_name:   Mu2Pt
+====es_name:  mu1Eta sixie_name:   Mu1Eta
+====es_name:  mu2Eta sixie_name:   Mu2Eta
+====es_name:  mu1Phi sixie_name:   Mu1Phi
+====es_name:  mu2Phi sixie_name:   Mu2Phi
+====es_name:  pileup.weight sixie_name:   Weight
+====es_name:  minDeltaR sixie_name:   MinDeltaR
+====es_name:  NV sixie_name:   NVertices
+====es_name:  isFSR sixie_name:   IsFSR

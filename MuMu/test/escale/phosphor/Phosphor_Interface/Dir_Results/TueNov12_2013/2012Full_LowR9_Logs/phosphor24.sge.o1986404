@@ -1,0 +1,9 @@
+BLABLABLA 
+compute-3-2.local
+/home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface
+Agent pid 11607
+Identity added: /home/vlambert/.ssh/id_rsa (/home/vlambert/.ssh/id_rsa)
+2048 54:df:6f:75:50:ba:75:b0:ec:0d:a3:3c:e9:ed:b5:db /home/vlambert/.ssh/id_rsa (RSA)
+Dir_Results/TueNov12_2013/2012Full_LowR9
+/home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/TueNov12_2013/2012Full_LowR9
+/opt/gridengine/default/spool/compute-3-2/job_scripts/1986404: ./../../../Phosphor_Interface_ExpFit.py: /cms/sw/slc5_amd64_gcc434/external/python/2.6.4-cms14/bin/python: bad interpreter: No such file or directory

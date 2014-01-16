@@ -1,4 +1,4 @@
-#!/cms/sw/slc5_amd64_gcc434/external/python/2.6.4-cms14/bin/python
+#!/cvmfs/cms.cern.ch/slc5_amd64_gcc434/cms/cmssw/CMSSW_4_2_8/external/slc5_amd64_gcc434/bin/python
 
 def print_debug(i):
 	print "DEBUG+++++++++++++++DEBUG%d" % i
@@ -43,7 +43,12 @@ def main():
         sys.exit(2)
 
     Globals.CmdFlag = False
-    
+
+    #Default tags for no pile up setting
+    nv = ''
+    nvtag = ''
+
+    #Read inputs 
     for opt, arg in options:
         #   print 'OPT: ', opt, 'ARG: ', arg
         
@@ -103,22 +108,21 @@ def main():
 	    continue
         elif opt == '--R9High':
 	    Globals.cuts.append('phoR9 < %s' % arg)
-            r9high = '_R9high_%s' % arg
+            r9high = '_R9High_%s' % arg
             if debug:
                 print '===CUTS===', Globals.cuts
             continue
         elif opt == '--NV':
 	    if arg == 'High':
 	        nv = '_HighNV'
+		nvtag = 'HighNV'
 		Globals.cuts.append('NV > 18')
 		continue
 	    elif arg == 'Low':
 		nv = '_LowNV'
+		nvtag = 'LowNV'
 		Globals.cuts.append('NV <= 18')
 		continue
-	    elif arg == 'NULL':
-		nv = ''
-		continue	
     
 
 	elif opt in ('-h','--help'):
@@ -135,8 +139,8 @@ def main():
     if Globals.CmdFlag == True:
 
         print "********CUTS: ", Globals.cuts
-	Globals.name = Globals.DataType + "_" + Globals.DetectorType + "_" + Globals.model_tree_version + nv + r9low + r9high + ptlow + pthigh #+ dilepcut
-	Globals.latex_title = Globals.DataType + ', ' + Globals.DetectorType + ", "+ nv + ', E_{T}^{#gamma} [%s,%s]'%(ptlow1 ,pthigh1)
+	Globals.name = Globals.DataType + "_" + Globals.DetectorType + "_" + Globals.model_tree_version +nv + r9low + r9high + ptlow + pthigh #+ dilepcut
+	Globals.latex_title = Globals.DataType + ', ' + Globals.DetectorType + ", "+ nvtag + ', E_{T}^{#gamma} [%s,%s]'%(ptlow1 ,pthigh1)
 
 	Globals.cuts.append('mmMass + mmgMass < 180')
         Globals.cuts.append('minDeltaR < 1.5')
@@ -151,7 +155,7 @@ def main():
             print 'COMMAND Line CONFIGURATION ------>:'
             
         #parse_cfg_file(cfg_file)
-        print "======COMMNAD LINE CONFIGURATION=========", 
+        print "======COMMNAND LINE CONFIGURATION=========", 
         init_cfg_file()
         
         if Globals.DataType == 'data':

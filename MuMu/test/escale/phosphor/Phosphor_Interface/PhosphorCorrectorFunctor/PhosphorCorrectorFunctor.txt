@@ -1,0 +1,17 @@
+// ========================================================================= //
+//                                                                           //
+//      Explanations of the contents of the PhosphorCorrectorFunctor         //
+//                                                                           //
+//                        Valere Lambert, Caltech 2014                       //
+//                                                                           //
+// ========================================================================= //
+
+# PhosphorCorrectorFunctor reads a .txt file from a PHOSPHOR dumper and produces the
+# energy corrections for various bins.
+
+# The directory "Cristians_Analysis" contains the original code used in the 2012 analysis
+# as well as a .txt file "PHOSPHOR_NUMBER_EXPFIT_ERRORS.txt" which contains the results
+# from this analysis
+
+# The directory "ExpandedPt" contains updated code for the 2013-2014 analysis for 2012 data
+# with more pt bins

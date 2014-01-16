@@ -1,0 +1,26 @@
+BLABLABLA 
+compute-3-10.local
+/home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface
+Agent pid 11599
+Identity added: /home/vlambert/.ssh/id_rsa (/home/vlambert/.ssh/id_rsa)
+2048 54:df:6f:75:50:ba:75:b0:ec:0d:a3:3c:e9:ed:b5:db /home/vlambert/.ssh/id_rsa (RSA)
+Dir_Results/ThuDec19_2013/HighNV
+sixie
+/home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV
+TStreamerInfo::Compile:0: RuntimeWarning: Counter fNClusterRange should not be skipped from class TTree
+TROOT::Append:0: RuntimeWarning: Replacing existing TH1: phoEResPdf_shape__phoERes (Potential memory leak).
+Info in <TCanvas::Print>: eps file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_phorhist.eps has been created
+Info in <TCanvas::Print>: eps file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_mwidth_vs_phor.eps has been created
+Info in <TCanvas::Print>: eps file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_fit.eps has been created
+Info in <TCanvas::Print>: eps file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_response_landscape.eps has been created
+Info in <TCanvas::Print>: eps file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_mass_landscape.eps has been created
+Info in <TCanvas::Print>: eps file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_phorhist.eps has been created
+Info in <TCanvas::SaveAs>: ROOT file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_phorhist.root has been created
+Info in <TCanvas::Print>: eps file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_mwidth_vs_phor.eps has been created
+Info in <TCanvas::SaveAs>: ROOT file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_mwidth_vs_phor.root has been created
+Info in <TCanvas::Print>: eps file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_fit.eps has been created
+Info in <TCanvas::SaveAs>: ROOT file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_fit.root has been created
+Info in <TCanvas::Print>: eps file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_response_landscape.eps has been created
+Info in <TCanvas::SaveAs>: ROOT file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_response_landscape.root has been created
+Info in <TCanvas::Print>: eps file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_mass_landscape.eps has been created
+Info in <TCanvas::SaveAs>: ROOT file /home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/Dir_Results/ThuDec19_2013/HighNV/mc_EB_sixie_HighNV_R9Low_0_R9High_999_PtLow_20_PtHigh_25_mass_landscape.root has been created

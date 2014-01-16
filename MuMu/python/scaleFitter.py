@@ -905,8 +905,37 @@ class ScaleFitter(PlotData):
 
 ## <-- ScaleFitter ------------------------------------------------------------
 
+subdet_r9_nv_categories = ICut(
+    names = 'EB_sixie_LowNV_R9Low_0_R9High_0.94 EB_sixie_HighNV_R9Low_0_R9High_0.94 EB_sixie_LowNV_R9Low_0.94_R9High_999 EB_sixie_HighNV_R9Low_0.94_R9High_999 EE_sixie_LowNV_R9Low_0_R9High_0.94 EE_sixie_HighNV_R9Low_0_R9High_0.94 EE_sixie_LowNV_R9Low_0.94_R9High_999 EE_sixie_HighNV_R9Low_0.94_R9High_999'.split(),
+    titles = ('Barrel, R9 < 0.94, Low Pile Up',
+              'Barrel, R9 < 0.94, High Pile Up',
+              'Barrel, R9 > 0.94, Low Pile Up',
+              'Barrel, R9 > 0.94, High Pile Up',
+              'Endcaps, R9 < 0.94, Low Pile Up',
+              'Endcaps, R9 < 0.94, High Pile Up',
+              'Endcaps, R9 > 0.94, Low Pile Up',
+              'Endcaps, R9 > 0.94, High Ple Up'),
+    labels = (('Barrel', 'R_{9}^{#gamma} < 0.94', 'Low Pile Up'),
+              ('Barrel', 'R_{9}^{#gamma} < 0.94', 'High Pile Up'),
+              ('Barrel', 'R_{9}^{#gamma} > 0.94', 'Low Pile Up'),
+              ('Barrel', 'R_{9}^{#gamma} > 0.94', 'High Pile Up'),
+              ('Endcaps', 'R_{9}^{#gamma} < 0.94', 'Low Pile Up'),
+              ('Endcaps', 'R_{9}^{#gamma} < 0.94', 'High Pile Up'),
+              ('Endcaps', 'R_{9}^{#gamma} > 0.94', 'Low Pile Up'),
+              ('Endcaps', 'R_{9}^{#gamma} > 0.94','High Pile Up' ),),
+
+    cuts = (('phoIsEB' , 'phoR9 < 0.94', 'NV <= 18'),
+            ('phoIsEB' , 'phoR9 < 0.94', 'NV > 18'),
+            ('phoIsEB' , 'phoR9 > 0.94', 'NV <= 18'),
+            ('phoIsEB' , 'phoR9 > 0.94', 'NV > 18'),
+            ('!phoIsEB' , 'phoR9 < 0.94', 'NV <= 18'),
+            ('!phoIsEB' , 'phoR9 < 0.94', 'NV > 18'),
+            ('!phoIsEB' , 'phoR9 > 0.94', 'NV <= 18'),
+            ('!phoIsEB' , 'phoR9 > 0.94', 'NV > 18'),)
+    )
+ 
 subdet_r9_categories = ICut(
-    names = 'EB_lowR9 EB_highR9 EE_lowR9 EE_highR9'.split(),
+    names = 'EB_sixie_R9Low_0_R9High_0.94 EB_sixie_R9Low_0.94_R9High_999 EE_sixie_R9Low_0_R9High_0.94 EE_sixie_R9Low_0.94_R9High_999'.split(),
     titles = ('Barrel, R9 < 0.94',
               'Barrel, R9 > 0.94',
               'Endcaps, R9 < 0.95',
@@ -921,8 +950,26 @@ subdet_r9_categories = ICut(
             ('phoIsEB' , 'phoR9 > 0.94'),
             ('!phoIsEB' , 'phoR9 < 0.95'),
             ('!phoIsEB' , 'phoR9 > 0.95'),)
-)
+    )
 
+subdet_nv_categories = ICut(
+    names = 'EB_sixie_HighNV_R9Low_0_R9High_999 EB_sixie_LowNV_R9Low_0_R9High_999 EE_sixie_HighNV_R9Low_0_R9High_999 EE_sixie_LowNV_R9Low_0_R9High_999'.split(),
+    titles = ('Barrel, High Pile Up',
+              'Barrel, Low Pile Up',
+              'Endcaps, High Pile Up',
+              'Endcaps, Low Pile Up'),
+    labels = (('Barrel', 'High Pile Up'),
+              ('Barrel', 'Low Pile Up'),
+              ('Endcaps', 'High Pile Up'),
+              ('Endcaps', 'Low Pile Up'),),
+    cuts = (('phosIsEB', 'NV > 18'),
+            ('phoIsEB', 'NV <=18'),
+            ('!phoIsEB', 'NV > 18'),
+            ('!phoIsEB', 'NV <= 18'),)
+    )
+
+
+    
 subdet_categories = ICut(
     names = 'EB EE'.split(),
     titles = ('Barrel',
@@ -933,7 +980,7 @@ subdet_categories = ICut(
     ## For TTree selection expressions
     cuts = (('phoIsEB',),
             ('!phoIsEB',),)
-)
+    )
 
 ## model_names = 'gauss cbShape lognormal curijff gamma'.split()
 ## model_titles = 'Gauss CB Lognaormal Cruijff Gamma'.split()

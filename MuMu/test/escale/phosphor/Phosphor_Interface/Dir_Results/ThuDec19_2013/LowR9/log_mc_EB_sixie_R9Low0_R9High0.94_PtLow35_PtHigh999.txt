@@ -1,0 +1,2465 @@
+DEBUG+++++++++++++++DEBUG0
+DEBUG+++++++++++++++DEBUG1
+DEBUG+++++++++++++++DEBUG10
+Setting ROOT's style to CMS Style...
+DEBUG+++++++++++++++DEBUG2
+DEBUG+++++++++++++++DEBUG3
+DEBUG+++++++++++++++DEBUG1
+ARGV      : ['-i', '--exp_bkg', 'True', '--DataType', 'mc', '--DetectorType', 'EB', '--treeversion', 'sixie', '--R9Low', '0', '--R9High', '0.94', '--PtLow', '35', '--PtHigh', '999']
+********CUTS:  ['phoIsEB', 'phoR9 >= 0', 'phoR9 < 0.94', 'phoPt >= 35', 'phoPt < 999']
+======COMMNAND LINE CONFIGURATION========= ===============CUTS====================== ['phoIsEB', 'phoR9 >= 0', 'phoR9 < 0.94', 'phoPt >= 35', 'phoPt < 999', 'mmMass + mmgMass < 180', 'minDeltaR < 1.5', 'mmgMass > 52', 'mu1Pt > 15', 'mu2Pt > 10']
+====================Model Tree Version=========================== sixie
+===================Name=========================== mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999
+===================Name2=========================== mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999
+===================EXP BKG=========================== 
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'plot' created with bounds [70,110]
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit' created with bounds [60,120]
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'tails' created with bounds [60,120]
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'peak' created with bounds [80,100]
+Loading  z : MC/small_reweight.root
+Loading  data : Data/new/MuMuGamma_Data.root
+version in 'sixie sixie2 sixie3'.split()
+z <ROOT.TChain object ("ZmumuGammaEvent") at 0x1805fe10>
+ch sixie:  <ROOT.TChain object ("ZmumuGammaEvent") at 0x1805fe10>
+====es_name:  mmMass sixie_name:   DileptonMass
+====es_name:  mmgMass sixie_name:   Mass
+====es_name:  phoEta sixie_name:   PhotonEta
+====es_name:  phoPhi sixie_name:   PhotonPhi
+====es_name:  phoGenE sixie_name:   GenPhoE
+====es_name:  phoIsEB sixie_name:   PhotonIsEB
+====es_name:  phoR9 sixie_name:   PhotonR9
+====es_name:  phoPt sixie_name:   PhotonPt
+====es_name:  mu1Pt sixie_name:   Mu1Pt
+====es_name:  mu2Pt sixie_name:   Mu2Pt
+====es_name:  mu1Eta sixie_name:   Mu1Eta
+====es_name:  mu2Eta sixie_name:   Mu2Eta
+====es_name:  mu1Phi sixie_name:   Mu1Phi
+====es_name:  mu2Phi sixie_name:   Mu2Phi
+====es_name:  pileup.weight sixie_name:   Weight
+====es_name:  minDeltaR sixie_name:   MinDeltaR
+====es_name:  NV sixie_name:   NVertices
+====es_name:  isFSR sixie_name:   IsFSR
+data <ROOT.TChain object ("ZmumuGammaEvent") at 0x17d93710>
+ch sixie:  <ROOT.TChain object ("ZmumuGammaEvent") at 0x17d93710>
+====es_name:  mmMass sixie_name:   DileptonMass
+====es_name:  mmgMass sixie_name:   Mass
+====es_name:  phoEta sixie_name:   PhotonEta
+====es_name:  phoPhi sixie_name:   PhotonPhi
+====es_name:  phoGenE sixie_name:   GenPhoE
+====es_name:  phoIsEB sixie_name:   PhotonIsEB
+====es_name:  phoR9 sixie_name:   PhotonR9
+====es_name:  phoPt sixie_name:   PhotonPt
+====es_name:  mu1Pt sixie_name:   Mu1Pt
+====es_name:  mu2Pt sixie_name:   Mu2Pt
+====es_name:  mu1Eta sixie_name:   Mu1Eta
+====es_name:  mu2Eta sixie_name:   Mu2Eta
+====es_name:  mu1Phi sixie_name:   Mu1Phi
+====es_name:  mu2Phi sixie_name:   Mu2Phi
+====es_name:  pileup.weight sixie_name:   Weight
+====es_name:  minDeltaR sixie_name:   MinDeltaR
+====es_name:  NV sixie_name:   NVertices
+====es_name:  isFSR sixie_name:   IsFSR
++++++CUTS0++++++ ['phoIsEB', 'phoR9 >= 0', 'phoR9 < 0.94', 'phoPt >= 35', 'phoPt < 999', 'mmMass + mmgMass < 180', 'minDeltaR < 1.5', 'mmgMass > 52', 'mu1Pt > 15', 'mu2Pt > 10']
++++++CUTS1++++++ ['phoIsEB', 'phoR9 >= 0', 'phoR9 < 0.94', 'phoPt >= 35', 'phoPt < 999', 'mmMass + mmgMass < 180', 'minDeltaR < 1.5', 'mmgMass > 52', 'mu1Pt > 15', 'mu2Pt > 10']
+weight : pileup.weight
+mmgMass : mmgMass
+mmMass : mmMass
+phoERes : 100 * phoERes
+mmgMassPhoGenE : threeBodyMass(mu1Pt, mu1Eta, mu1Phi, 0.106,               mu2Pt, mu2Eta, mu2Phi, 0.106,               phoGenE * phoPt / phoE,                      phoEta, phoPhi, 0)
+RooArgSet:: = (mmgMass,mmMass,phoERes,mmgMassPhoGenE,weight)
+RooArgSet:: = (mmgMass,mmMass,phoERes,mmgMassPhoGenE,weight)
+RooArgSet:: = (mmgMass,mmMass,weight)
+RooArgSet:: = (mmgMass,mmMass,weight)
++++ 1. init and get_data (9578 entries) CPU time: 1.3 s, real time: 2.47 s
+++++Number of Entries, fsr0:  4457.10251695   ---   4419
+++++Number of Entries, ZJ0:  392.82485971  -----  370
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mccworkspace) importing dataset data
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mccworkspace) importing RooRealVar::mmgMass
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mccworkspace) importing RooRealVar::mmMass
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mccworkspace) importing RooRealVar::phoERes
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mccworkspace) importing RooRealVar::mmgMassPhoGenE
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_shape_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_shape_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-22.7802 FROM HESSE     STATUS=OK             19 CALLS          20 TOTAL
+                     EDM=0.00709337    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  phoERes      4.65000e-01   2.04170e-01   3.78619e-04   6.90937e+01
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-22.7921 FROM MIGRAD    STATUS=CONVERGED      71 CALLS          72 TOTAL
+                     EDM=0.000183218    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  phoERes      4.50602e-01   2.32025e-02   6.54471e-06   6.90917e+01
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  5.384e-04 
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_data) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'NormalizationRangeForfit' created with bounds [-70,100]
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_data' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_data) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+ **********
+ **   14 **MIGRAD        1000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=10873.8 FROM HESSE     STATUS=OK             16 CALLS          17 TOTAL
+                     EDM=2.67902    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  r            2.15174e+00   3.81229e-02   8.70539e-03   6.15043e+02
+   2  s            4.50602e-01   2.90603e-02   1.34192e-03  -3.19338e+02
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=10871.3 FROM MIGRAD    STATUS=CONVERGED      50 CALLS          51 TOTAL
+                     EDM=3.10073e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  r            2.07217e+00   2.47807e-02   1.84022e-04  -1.32145e+00
+   2  s            4.54691e-01   2.82262e-02   4.17634e-05   8.97060e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  6.141e-04  1.151e-04 
+  1.151e-04  7.967e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.16455   1.000  0.165
+        2  0.16455   0.165  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=10871.3 FROM HESSE     STATUS=OK             28 CALLS          79 TOTAL
+                     EDM=0.000131555    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  r            2.07217e+00   3.65172e-02   8.64263e-03  -1.16174e+00
+   2  s            4.54691e-01   2.88354e-02   1.31136e-03   9.09394e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  1.334e-03  2.927e-05 
+  2.927e-05  8.315e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.02780   1.000  0.028
+        2  0.02780   0.028  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:ObjectHandling -- RooWorkSpace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) Recycling existing object mmgMass created with identical factory specification
+[#1] INFO:ObjectHandling -- RooWorkSpace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) Recycling existing object phoScale created with identical factory specification
+[#1] INFO:ObjectHandling -- RooWorkSpace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) Recycling existing object phoRes created with identical factory specification
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset data
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mccworkspace) importing dataset data
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mccworkspace) importing RooRealVar::mmgMass
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mccworkspace) importing RooRealVar::mmMass
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mccworkspace) importing RooRealVar::phoERes
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mccworkspace) importing RooRealVar::mmgMassPhoGenE
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_shape_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_shape_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-22.7802 FROM HESSE     STATUS=OK             19 CALLS          20 TOTAL
+                     EDM=0.00710361    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  phoERes      4.65000e-01   2.04317e-01   3.82068e-04   6.90937e+01
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-22.7918 FROM HESSE     STATUS=OK              7 CALLS          57 TOTAL
+                     EDM=0.000658256    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  phoERes      4.50962e-01   6.21961e-02   5.81043e-05   6.90917e+01
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-22.7922 FROM MIGRAD    STATUS=CONVERGED      85 CALLS          86 TOTAL
+                     EDM=0.000119963    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  phoERes      4.50520e-01   1.87747e-02   4.92593e-06   6.90917e+01
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  3.525e-04 
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_data) constructing test statistic for sub-range named fit
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_data) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_0) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_0' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_0) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_0
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_0
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_0
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_0_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_0_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-15.5123 FROM HESSE     STATUS=OK             17 CALLS          18 TOTAL
+                     EDM=0.00133597    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16500e+01   2.46327e-01   3.27637e-04  -1.48302e+01
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-15.5128 FROM MIGRAD    STATUS=CONVERGED      52 CALLS          53 TOTAL
+                     EDM=2.92772e-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16516e+01   8.15389e-03   3.52087e-07  -1.48302e+01
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  6.649e-05 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'NormalizationRangeForfit' created with bounds [50,130]
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_0_signal_model0_sdata_0' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_0_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE0) successfully forked server process 4074
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE1) successfully forked server process 4075
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE2) successfully forked server process 4076
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE3) successfully forked server process 4077
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE4) successfully forked server process 4078
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE5) successfully forked server process 4079
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE6) successfully forked server process 4080
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_0_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+ **********
+ **   14 **MIGRAD        1000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_0_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_0_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12912.8 FROM HESSE     STATUS=OK             14 CALLS          15 TOTAL
+                     EDM=38.6363    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_0   3.00000e+00   5.09161e-02   9.89595e-03  -1.16852e+03
+   2  signal_model0_keys_mode_0   9.12000e+01   4.12798e-02   3.45792e-03  -5.78789e+03
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12872.9 FROM MIGRAD    STATUS=CONVERGED      88 CALLS          89 TOTAL
+                     EDM=0.000677277    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_0   3.23674e+00   7.60660e-02   4.49697e-04   3.73466e+00
+   2  signal_model0_keys_mode_0   9.15190e+01   6.32504e-02   1.53006e-04   8.37101e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  5.786e-03 -5.644e-04 
+ -5.644e-04  4.001e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.11730   1.000 -0.117
+        2  0.11730  -0.117  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12872.9 FROM HESSE     STATUS=OK             34 CALLS         123 TOTAL
+                     EDM=0.000252329    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_0   3.23674e+00   5.81508e-02   1.09190e-02  -1.10903e+00
+   2  signal_model0_keys_mode_0   9.15190e+01   4.22769e-02   3.53631e-03   5.06549e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  3.382e-03  8.212e-05 
+  8.212e-05  1.787e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.03340   1.000  0.033
+        2  0.03340   0.033  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_0_signal_model0_sdata_0_1926dae0_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_0_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_0
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_1) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_1' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_1) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_1
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_1_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_1_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-15.5319 FROM HESSE     STATUS=OK             15 CALLS          16 TOTAL
+                     EDM=0.000551805    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16500e+01   2.57351e-01   3.58769e-04  -9.12280e+00
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-15.5322 FROM MIGRAD    STATUS=CONVERGED      40 CALLS          41 TOTAL
+                     EDM=2.35306e-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16516e+01   1.18833e-02   5.11214e-07  -9.12279e+00
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  1.412e-04 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_1_signal_model0_sdata_1' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_1_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE0) successfully forked server process 4103
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE1) successfully forked server process 4104
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE2) successfully forked server process 4105
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE3) successfully forked server process 4106
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE4) successfully forked server process 4107
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE5) successfully forked server process 4108
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE6) successfully forked server process 4109
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_1_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_1_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_1_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+0           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_1_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12900.4 FROM HESSE     STATUS=OK             14 CALLS          15 TOTAL
+                     EDM=35.6244    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_1   3.00000e+00   5.17329e-02   1.00824e-02  -1.04359e+03
+   2  signal_model0_keys_mode_1   9.12000e+01   4.13568e-02   3.46556e-03  -5.57963e+03
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12863.4 FROM MIGRAD    STATUS=CONVERGED     143 CALLS         144 TOTAL
+                     EDM=0.000310135    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_1   3.21602e+00   4.85381e-02   2.71240e-04   3.84861e+00
+   2  signal_model0_keys_mode_1   9.15139e+01   3.01198e-02   4.10086e-05  -7.55552e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  2.356e-03 -3.785e-04 
+ -3.785e-04  9.072e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.25888   1.000 -0.259
+        2  0.25888  -0.259  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12863.4 FROM HESSE     STATUS=OK             28 CALLS         172 TOTAL
+                     EDM=0.00426339    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_1   3.21602e+00   5.84371e-02   1.09928e-02  -1.11059e+00
+   2  signal_model0_keys_mode_1   9.15139e+01   4.22406e-02   3.52589e-03   5.04844e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  3.415e-03  1.392e-04 
+  1.392e-04  1.784e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.05641   1.000  0.056
+        2  0.05641   0.056  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_1_signal_model0_sdata_1_19529590_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_1_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_1
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_2) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_2' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_2) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_2
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_2
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_2_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_2_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-15.4646 FROM HESSE     STATUS=OK             17 CALLS          18 TOTAL
+                     EDM=2.38473e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16500e+01   2.43638e-01   3.22796e-04  -6.33485e-02
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-15.4646 FROM MIGRAD    STATUS=CONVERGED      42 CALLS          43 TOTAL
+                     EDM=2.8361e-09    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16515e+01   5.94119e-02   2.28549e-06  -6.33484e-02
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  3.530e-03 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_2_signal_model0_sdata_2' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_2_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE0) successfully forked server process 4124
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE1) successfully forked server process 4125
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE2) successfully forked server process 4127
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE3) successfully forked server process 4128
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE4) successfully forked server process 4129
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE5) successfully forked server process 4130
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE6) successfully forked server process 4131
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_2_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_2_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12918.5 FROM HESSE     STATUS=OK             14 CALLS          15 TOTAL
+                     EDM=35.2024    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_2   3.00000e+00   5.17146e-02   1.00842e-02  -1.11595e+03
+   2  signal_model0_keys_mode_2   9.12000e+01   4.17808e-02   3.50403e-03  -5.34500e+03
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12881.6 FROM MIGRAD    STATUS=CONVERGED      74 CALLS          75 TOTAL
+                     EDM=0.000601508    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_2   3.24585e+00   6.31362e-02   3.70879e-04  -5.30639e-01
+   2  signal_model0_keys_mode_2   9.15116e+01   3.86452e-02   1.00756e-04   1.89711e+01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  3.986e-03  6.994e-05 
+  6.994e-05  1.493e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.02866   1.000  0.029
+        2  0.02866   0.029  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12881.6 FROM HESSE     STATUS=OK             26 CALLS         101 TOTAL
+                     EDM=0.000835353    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_2   3.24585e+00   6.35866e-02   7.41757e-05  -1.10835e+00
+   2  signal_model0_keys_mode_2   9.15116e+01   4.30357e-02   3.59437e-03   5.04078e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  4.043e-03  1.923e-04 
+  1.923e-04  1.852e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.07027   1.000  0.070
+        2  0.07027   0.070  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_2_signal_model0_sdata_2_197093b0_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_2_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_2
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_3) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_3' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_3) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_3
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_3
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_3
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_3_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_3_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-15.0149 FROM HESSE     STATUS=OK             11 CALLS          12 TOTAL
+                     EDM=0.00262803    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.15500e+01   2.23820e-01   2.56375e-04  -2.28932e+01
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-15.0156 FROM MIGRAD    STATUS=CONVERGED      74 CALLS          75 TOTAL
+                     EDM=6.029e-07    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.15516e+01   8.86143e-03   3.88019e-07   6.19291e+00
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  7.852e-05 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_3_signal_model0_sdata_3' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_3_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE0) successfully forked server process 4140
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE1) successfully forked server process 4141
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE2) successfully forked server process 4142
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE3) successfully forked server process 4143
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE4) successfully forked server process 4144
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE5) successfully forked server process 4145
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE6) successfully forked server process 4146
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_3_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_3_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12988.8 FROM HESSE     STATUS=OK             14 CALLS          15 TOTAL
+                     EDM=28.4136    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_3   3.00000e+00   5.12744e-02   1.00222e-02  -1.54489e+03
+   2  signal_model0_keys_mode_3   9.12000e+01   4.27849e-02   3.59318e-03  -3.31029e+03
+                               ERR DEF= 0.5
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12958.4 FROM HESSE     STATUS=OK             22 CALLS         110 TOTAL
+                     EDM=1.11023e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_3   3.36027e+00   6.78461e-02   4.41671e-04   7.95010e-01
+   2  signal_model0_keys_mode_3   9.14017e+01   4.41849e-02   1.13945e-04  -1.36702e+00
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12958.4 FROM MIGRAD    STATUS=CONVERGED     140 CALLS         141 TOTAL
+                     EDM=1.32546e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_3   3.36026e+00   6.76709e-02   4.41705e-04   6.66826e-01
+   2  signal_model0_keys_mode_3   9.14017e+01   4.62296e-02   3.64625e-07  -1.29017e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  4.579e-03  4.103e-04 
+  4.103e-04  2.137e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.13116   1.000  0.131
+        2  0.13116   0.131  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=12958.4 FROM HESSE     STATUS=OK             16 CALLS         157 TOTAL
+                     EDM=0.000121906    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_3   3.36026e+00   6.22764e-02   1.24435e-02  -1.09986e+00
+   2  signal_model0_keys_mode_3   9.14017e+01   4.57939e-02   7.29249e-08   4.67390e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  3.878e-03 -8.995e-06 
+ -8.995e-06  2.097e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.00315   1.000 -0.003
+        2  0.00315  -0.003  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_3_signal_model0_sdata_3_198f22b0_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_3_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_3
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_4) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_4' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_4) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -3.1190e-03  2.0031e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 0.005122 TO DIAGONAL.
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_4
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_4
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_4
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_4_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_4_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-14.3497 FROM HESSE     STATUS=OK             15 CALLS          16 TOTAL
+                     EDM=1.59674e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16500e+01   2.99023e-01   4.01688e-04  -1.33559e+00
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-14.3498 FROM MIGRAD    STATUS=CONVERGED      36 CALLS          37 TOTAL
+                     EDM=8.74768e-07    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16516e+01   4.94904e-02   2.00289e-06  -1.33559e+00
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  2.449e-03 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_4_signal_model0_sdata_4' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_4_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE0) successfully forked server process 4155
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE1) successfully forked server process 4156
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE2) successfully forked server process 4157
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE3) successfully forked server process 4158
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE4) successfully forked server process 4159
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE5) successfully forked server process 4160
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE6) successfully forked server process 4161
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_4_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_4_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_4_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13192.4 FROM HESSE     STATUS=OK             14 CALLS          15 TOTAL
+                     EDM=58.6057    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_4   3.00000e+00   5.00288e-02   9.86273e-03  -2.33321e+03
+   2  signal_model0_keys_mode_4   9.12000e+01   4.42124e-02   3.75477e-03  -4.32599e+03
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13126.8 FROM MIGRAD    STATUS=CONVERGED      53 CALLS          54 TOTAL
+                     EDM=8.99474e-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_4   3.57405e+00   7.38450e-02   3.95096e-04  -4.04420e-01
+   2  signal_model0_keys_mode_4   9.14925e+01   4.46704e-02   1.18986e-04   1.94257e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  5.453e-03  1.053e-03 
+  1.053e-03  1.995e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.31910   1.000  0.319
+        2  0.31910   0.319  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13126.8 FROM HESSE     STATUS=OK             26 CALLS          80 TOTAL
+                     EDM=2.41501e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_4   3.57405e+00   6.73751e-02   1.21422e-02  -1.08436e+00
+   2  signal_model0_keys_mode_4   9.14925e+01   4.78567e-02   3.89072e-03   4.97706e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  4.539e-03  2.233e-04 
+  2.233e-04  2.290e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.06925   1.000  0.069
+        2  0.06925   0.069  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_4_signal_model0_sdata_4_19ad4490_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_4_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_4
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_5) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_5' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_5) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_5
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_5
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_5
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_5_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_5_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-13.5721 FROM HESSE     STATUS=OK             13 CALLS          14 TOTAL
+                     EDM=0.000419026    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16500e+01   3.05460e-01   3.44992e-04  -6.69770e+00
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-13.5723 FROM MIGRAD    STATUS=CONVERGED      33 CALLS          34 TOTAL
+                     EDM=8.70792e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16514e+01   9.84644e-02   3.35339e-05  -6.69770e+00
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  9.695e-03 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_5_signal_model0_sdata_5' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_5_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE0) successfully forked server process 4172
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE1) successfully forked server process 4173
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE2) successfully forked server process 4174
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE3) successfully forked server process 4175
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE4) successfully forked server process 4176
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE5) successfully forked server process 4177
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE6) successfully forked server process 4178
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_5_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_5_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13428.5 FROM HESSE     STATUS=OK             14 CALLS          15 TOTAL
+                     EDM=93.521    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_5   3.00000e+00   4.84387e-02   9.63270e-03  -3.32569e+03
+   2  signal_model0_keys_mode_5   9.12000e+01   4.56160e-02   3.91422e-03  -4.05804e+03
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13320.2 FROM MIGRAD    STATUS=CONVERGED      59 CALLS          60 TOTAL
+                     EDM=4.14149e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_5   3.82096e+00   7.17598e-02   4.27939e-04  -1.17828e+00
+   2  signal_model0_keys_mode_5   9.14921e+01   4.95153e-02   1.41952e-04   1.26781e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  5.150e-03 -4.096e-04 
+ -4.096e-04  2.452e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.11528   1.000 -0.115
+        2  0.11528  -0.115  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13320.2 FROM HESSE     STATUS=OK             34 CALLS          94 TOTAL
+                     EDM=0.000195853    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_5   3.82096e+00   7.17679e-02   1.29150e-02  -1.06701e+00
+   2  signal_model0_keys_mode_5   9.14921e+01   5.10922e-02   4.33865e-03   4.97568e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  5.151e-03  2.071e-04 
+  2.071e-04  2.610e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.05647   1.000  0.056
+        2  0.05647   0.056  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_5_signal_model0_sdata_5_19cb47a0_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_5_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_5
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_6) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_6' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_6) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_6
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_6
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_6
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_6_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_6_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-12.7494 FROM HESSE     STATUS=OK             11 CALLS          12 TOTAL
+                     EDM=2.31216e-07    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16500e+01   3.54397e-01   3.77037e-04  -1.35606e-01
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-12.7494 FROM MIGRAD    STATUS=CONVERGED      38 CALLS          39 TOTAL
+                     EDM=1.56321e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16516e+01   6.51596e-02   1.44345e-06  -1.35606e-01
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  4.246e-03 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_6_signal_model0_sdata_6' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_6_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE0) successfully forked server process 4223
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE1) successfully forked server process 4224
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE2) successfully forked server process 4225
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE3) successfully forked server process 4226
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE4) successfully forked server process 4229
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE5) successfully forked server process 4230
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE6) successfully forked server process 4233
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_6_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_6_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13672.4 FROM HESSE     STATUS=OK             14 CALLS          15 TOTAL
+                     EDM=129.445    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_6   3.00000e+00   4.69380e-02   9.41643e-03  -4.18208e+03
+   2  signal_model0_keys_mode_6   9.12000e+01   4.77679e-02   4.12395e-03  -3.62455e+03
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13515.1 FROM HESSE     STATUS=OK             14 CALLS          97 TOTAL
+                     EDM=0.00456616    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_6   4.06623e+00   6.08936e-02   3.43302e-04  -1.86695e+01
+   2  signal_model0_keys_mode_6   9.14948e+01   2.85277e-02   8.05701e-05  -7.83314e+01
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13515.1 FROM HESSE     STATUS=OK             26 CALLS         134 TOTAL
+                     EDM=0.0131454    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_6   4.06623e+00   7.73002e-02   1.31664e-02  -2.20873e+01
+   2  signal_model0_keys_mode_6   9.14948e+01   5.47532e-02   4.52598e-03  -5.88348e+01
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=13515.1 FROM MIGRAD    STATUS=FAILED        144 CALLS         145 TOTAL
+                     EDM=0.0131454    STRATEGY= 2      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_6   4.06623e+00   7.73002e-02   0.00000e+00  -2.20873e+01
+   2  signal_model0_keys_mode_6   9.14948e+01   5.47532e-02   0.00000e+00  -5.88348e+01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  5.975e-03  2.733e-04 
+  2.733e-04  2.998e-03 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.06456   1.000  0.065
+        2  0.06456   0.065  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13515.1 FROM HESSE     STATUS=OK             26 CALLS         171 TOTAL
+                     EDM=0.0262989    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_6   4.06623e+00   7.72997e-02   1.31166e-02  -1.05030e+00
+   2  signal_model0_keys_mode_6   9.14948e+01   5.47530e-02   4.56207e-03   4.98460e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  5.975e-03  2.745e-04 
+  2.745e-04  2.998e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.06485   1.000  0.065
+        2  0.06485   0.065  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_6_signal_model0_sdata_6_19e8f370_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_6_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_6
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_7) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_7' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_7) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_7
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_7
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_7_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_7_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-11.4808 FROM HESSE     STATUS=OK             13 CALLS          14 TOTAL
+                     EDM=0.0014006    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.15500e+01   4.18749e-01   4.34543e-04  -8.93284e+00
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-11.4811 FROM MIGRAD    STATUS=CONVERGED      47 CALLS          48 TOTAL
+                     EDM=3.20164e-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.15516e+01   2.87544e-02   9.92230e-07   4.39802e+00
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  8.268e-04 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_7_signal_model0_sdata_7' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_7_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE0) successfully forked server process 4245
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE1) successfully forked server process 4246
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE2) successfully forked server process 4247
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE3) successfully forked server process 4248
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE4) successfully forked server process 4249
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE5) successfully forked server process 4250
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE6) successfully forked server process 4251
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_7_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_7_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_7_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_7_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_7_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+ **********
+ **   14 **MIGRAD        1000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=14199.4 FROM HESSE     STATUS=OK             14 CALLS          15 TOTAL
+                     EDM=236.473    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_7   3.00000e+00   4.45084e-02   9.09848e-03  -6.22081e+03
+   2  signal_model0_keys_mode_7   9.12000e+01   5.14096e-02   4.51340e-03  -2.53373e+03
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13901.3 FROM MIGRAD    STATUS=CONVERGED      77 CALLS          78 TOTAL
+                     EDM=3.54195e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_7   4.57053e+00   6.94335e-02   3.44703e-04   8.12259e-01
+   2  signal_model0_keys_mode_7   9.14135e+01   4.95681e-02   1.29620e-04   2.66503e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  4.821e-03  3.433e-04 
+  3.433e-04  2.457e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.09975   1.000  0.100
+        2  0.09975   0.100  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=13901.3 FROM HESSE     STATUS=OK             34 CALLS         112 TOTAL
+                     EDM=5.12556e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_7   4.57053e+00   8.52591e-02   1.32989e-02  -1.01738e+00
+   2  signal_model0_keys_mode_7   9.14135e+01   6.12504e-02   5.32421e-03   4.71343e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  7.269e-03  1.584e-04 
+  1.584e-04  3.752e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.03033   1.000  0.030
+        2  0.03033   0.030  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_7_signal_model0_sdata_7_1a06fb30_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_7_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_7
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_8) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_8' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_8) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_8
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_8
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_8
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_8_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_8_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-9.72481 FROM HESSE     STATUS=OK             13 CALLS          14 TOTAL
+                     EDM=0.0021917    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.15500e+01   6.32893e-01   5.85220e-04  -7.39333e+00
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ MINUIT WARNING IN HESSE   
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN HESSE   
+ ============== 1.00975 added to diagonal of error matrix
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-9.72501 FROM HESSE     STATUS=OK              5 CALLS          40 TOTAL
+                     EDM=0.049038    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.15557e+01   7.53388e+01   2.02511e-05   3.13171e-01
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 206.388 added to diagonal of error matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 1 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 206.339 added to diagonal of error matrix
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-9.72504 FROM HESSE     STATUS=OK              7 CALLS         101 TOTAL
+                     EDM=9.18776e-08    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.15517e+01   9.67414e-02   4.65027e-06   3.13172e-01
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-9.72504 FROM MIGRAD    STATUS=CONVERGED     119 CALLS         120 TOTAL
+                     EDM=1.29174e-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.15516e+01   2.74011e-02   1.12176e-06  -2.93154e+00
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  7.508e-04 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_8_signal_model0_sdata_8' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_8_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE0) successfully forked server process 4254
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE1) successfully forked server process 4255
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE2) successfully forked server process 4256
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE3) successfully forked server process 4257
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE4) successfully forked server process 4258
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE5) successfully forked server process 4259
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE6) successfully forked server process 4260
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_8_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_8_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_8_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_8_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_8_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=14982.3 FROM HESSE     STATUS=OK             14 CALLS          15 TOTAL
+                     EDM=501.543    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_8   3.00000e+00   4.52954e-02   9.56650e-03  -8.99530e+03
+   2  signal_model0_keys_mode_8   9.12000e+01   5.78549e-02   5.22378e-03  -2.25271e+03
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=14390.7 FROM MIGRAD    STATUS=CONVERGED      66 CALLS          67 TOTAL
+                     EDM=0.000711329    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_8   5.32727e+00   9.75062e-02   4.73865e-04   2.11401e+00
+   2  signal_model0_keys_mode_8   9.14281e+01   7.43652e-02   2.00951e-04   9.40611e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  9.508e-03  2.264e-04 
+  2.264e-04  5.530e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.03122   1.000  0.031
+        2  0.03122   0.031  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=14390.7 FROM HESSE     STATUS=OK             28 CALLS          95 TOTAL
+                     EDM=0.000933211    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_8   5.32727e+00   9.71523e-02   1.52314e-02  -9.71029e-01
+   2  signal_model0_keys_mode_8   9.14281e+01   7.18004e-02   6.35019e-03   4.76228e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  9.439e-03  3.502e-05 
+  3.502e-05  5.155e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.00502   1.000  0.005
+        2  0.00502   0.005  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_8_signal_model0_sdata_8_1a24f550_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_8_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_8
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_9) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_9' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_9) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+ MINUIT WARNING IN MIGRAD  
+ ============== Negative diagonal element 2 in Error Matrix
+ MINUIT WARNING IN MIGRAD  
+ ============== 1 added to diagonal of error matrix
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -1.5614e+00  3.5614e+00
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING 1.564943 TO DIAGONAL.
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_9
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_9
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_9
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_9_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_9_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-7.57497 FROM HESSE     STATUS=OK             17 CALLS          18 TOTAL
+                     EDM=3.32593e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16500e+01   1.68610e+00   1.43577e-03  -3.41787e-01
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-7.57497 FROM HESSE     STATUS=OK              5 CALLS          27 TOTAL
+                     EDM=5.17278    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16508e+01   6.71086e+01   1.36478e-05  -3.41787e-01
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-7.57498 FROM HESSE     STATUS=OK              5 CALLS          66 TOTAL
+                     EDM=5.91553e-07    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16517e+01   8.16316e-02   3.43973e-06   9.41675e-01
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-7.57498 FROM MIGRAD    STATUS=CONVERGED      89 CALLS          90 TOTAL
+                     EDM=0.000500972    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.16517e+01   1.66734e+00   1.43707e-03   9.48530e-01
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  2.781e+00 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_9_signal_model0_sdata_9' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_9_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE0) successfully forked server process 4268
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE1) successfully forked server process 4269
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE2) successfully forked server process 4270
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE3) successfully forked server process 4271
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE4) successfully forked server process 4272
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE5) successfully forked server process 4273
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE6) successfully forked server process 4274
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_9_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_9_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+ **********
+ **   14 **MIGRAD        1000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_9_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=15986.8 FROM HESSE     STATUS=OK             14 CALLS          15 TOTAL
+                     EDM=686.707    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_9   3.00000e+00   4.11218e-02   9.10401e-03  -1.15846e+04
+   2  signal_model0_keys_mode_9   9.12000e+01   6.60820e-02   6.13462e-03  -2.39666e+03
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=14915.7 FROM HESSE     STATUS=OK             22 CALLS          72 TOTAL
+                     EDM=0.00142043    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_9   6.62811e+00   1.19261e-01   5.46709e-04   2.61386e+00
+   2  signal_model0_keys_mode_9   9.15865e+01   8.80139e-02   2.51670e-04  -1.74215e+01
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=14915.7 FROM MIGRAD    STATUS=CONVERGED     103 CALLS         104 TOTAL
+                     EDM=4.17578e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_9   6.62845e+00   1.00535e-01   4.38152e-04  -9.16952e-01
+   2  signal_model0_keys_mode_9   9.15883e+01   6.00070e-02   4.02671e-05   1.80540e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  1.011e-02 -7.246e-04 
+ -7.246e-04  3.601e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.12011   1.000 -0.120
+        2  0.12011  -0.120  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=14915.7 FROM HESSE     STATUS=OK             34 CALLS         138 TOTAL
+                     EDM=5.67216e-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_9   6.62845e+00   1.26079e-01   1.82134e-02  -8.97903e-01
+   2  signal_model0_keys_mode_9   9.15883e+01   9.23315e-02   8.13159e-03   5.29688e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  1.590e-02  8.623e-04 
+  8.623e-04  8.525e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.07408   1.000  0.074
+        2  0.07408   0.074  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_9_signal_model0_sdata_9_1a4306e0_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_9_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_9
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_10) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_signal_model0_sdata_10' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_signal_model0_sdata_10) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_sdata_10
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phostrue_10
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooRealVar::signal_model0_phortrue_10
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_10_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_10_shape_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ **********
+ **   14 **MIGRAD         500           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-5.41979 FROM HESSE     STATUS=OK             11 CALLS          12 TOTAL
+                     EDM=0.000439945    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.12500e+01   2.87757e+00   2.29008e-03  -7.28279e-01
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-5.4198 FROM MIGRAD    STATUS=CONVERGED      38 CALLS          39 TOTAL
+                     EDM=4.69116e-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mmgMass      9.12516e+01   3.97918e-01   1.21095e-05   3.84761e-01
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  1    ERR DEF=1
+  1.583e-01 
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_signal_model0_keys_pdf_10_signal_model0_sdata_10' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_10_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE0) successfully forked server process 4283
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE1) successfully forked server process 4284
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE2) successfully forked server process 4285
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE3) successfully forked server process 4286
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE4) successfully forked server process 4287
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE5) successfully forked server process 4288
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE6) successfully forked server process 4289
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_10_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_10_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_10_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_10_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=17063.9 FROM HESSE     STATUS=OK             16 CALLS          17 TOTAL
+                     EDM=2637.21    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_10   3.00000e+00   8.30679e-02   1.75449e-02  -1.12590e+04
+   2  signal_model0_keys_mode_10   9.12000e+01   8.61157e-02   8.09548e-03  -8.25242e+02
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=15411.3 FROM MIGRAD    STATUS=CONVERGED      79 CALLS          80 TOTAL
+                     EDM=0.000116278    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  signal_model0_keys_effsigma_10   8.94584e+00   1.80922e-01   7.38425e-04   8.06897e-01
+   2  signal_model0_keys_mode_10   9.12679e+01   1.47251e-01   3.94661e-04   1.65337e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  3.273e-02  7.425e-04 
+  7.425e-04  2.168e-02 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.02787   1.000  0.028
+        2  0.02787   0.028  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=15411.3 FROM HESSE     STATUS=OK             26 CALLS         106 TOTAL
+                     EDM=0.000393975    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  signal_model0_keys_effsigma_10   8.94584e+00   1.81565e-01   2.34380e-02  -7.81925e-01
+   2  signal_model0_keys_mode_10   9.12679e+01   1.29786e-01   1.18706e-02   4.22750e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  3.297e-02  8.761e-04 
+  8.761e-04  1.684e-02 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.03718   1.000  0.037
+        2  0.03718   0.037  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_signal_model0_keys_pdf_10_signal_model0_sdata_10_1a610a40_MPFE6) server process terminating
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_keys_pdf_10_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_dhist_10
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_0_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_1_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_0_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_1_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_2_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_2_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_3_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_3_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_4_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_4_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_5_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_5_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_6_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_6_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_7_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_7_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_8_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_8_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_9_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_9_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_10_MOMENT_1_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_pdf_10_MOMENT_2C_mmgMass_product_Int[mmgMass,phoRes]_Norm[mmgMass,phoRes]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
++++ 2. build PhosphorModel5 CPU time: 84.67 s, real time: 105.66 s
+[#1] INFO:Caching -- RooPhosphorPdf::analyticalIntegral(signal_model0): caching signal_model0_Int[mmgMass|(60,120)] for normalization at 30x25 bins in (phoScale)x(phoRes).
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_normCalcPdf_Int[mmgMass|fit]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(signal_model0_Int[mmgMass|(60,120)]_dataHist): fit range of variable phoScale expanded to nearest bin boundaries: [-50,50] --> [-15,15]
++++ 2.1 get the nomalization integral cache for range fit CPU time: 15.72 s, real time: 25.73 s
+[#1] INFO:Caching -- RooPhosphorPdf::analyticalIntegral(signal_model0): caching signal_model0_Int[mmgMass|(70,110)] for normalization at 30x25 bins in (phoScale)x(phoRes).
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_normCalcPdf_Int[mmgMass|plot]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
++++ 2.2 get the nomalization integral cache for range plot CPU time: 10.89 s, real time: 19.06 s
+[#1] INFO:Caching -- RooPhosphorPdf::analyticalIntegral(signal_model0): caching signal_model0_Int[mmgMass|(40,140)] for normalization at 30x25 bins in (phoScale)x(phoRes).
+[#1] INFO:Eval -- RooRealVar::getBinning(mmgMass) new range named '' created with default bounds
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(signal_model0_normCalcPdf_Int[mmgMass|]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
++++ 2.3 get the nomalization integral cache for range <none> CPU time: 26.93 s, real time: 33.20 s
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset signal_model0_phor_dhist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooPhosphorPdf::signal_model0
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing RooKeysPdf::zj0_pdf
++++ 2.4 build full S+B model CPU time: 0.12 s, real time: 0.16 s
+============= MC ===========
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_fitdata1) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'fit_nll_phoEResPdf_fitdata1' created with bounds [-50,50]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_fitdata1) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+ **********
+ **   14 **MIGRAD        1000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=10871.4 FROM HESSE     STATUS=OK             18 CALLS          19 TOTAL
+                     EDM=0.010065    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  r            2.07217e+00   3.65585e-02   3.67332e-04  -1.65506e+01
+   2  s            4.54691e-01   2.90840e-02   1.41372e-03   2.09083e+02
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=10871.3 FROM MIGRAD    STATUS=CONVERGED     118 CALLS         119 TOTAL
+                     EDM=0.000933652    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  r            2.06962e+00   1.82119e-02   1.39701e-04   1.36202e+01
+   2  s            4.45889e-01   1.33960e-02   1.99847e-05   6.80826e+01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  3.317e-04 -5.990e-06 
+ -5.990e-06  1.795e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.02455   1.000 -0.025
+        2  0.02455  -0.025  1.000
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=10871.3 FROM HESSE     STATUS=OK             30 CALLS         149 TOTAL
+                     EDM=0.00180627    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  r            2.06962e+00   3.62478e-02   8.63963e-03  -1.16200e+00
+   2  s            4.45889e-01   2.87084e-02   1.32744e-03   8.91790e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  1.314e-03  1.648e-05 
+  1.648e-05  8.242e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.01584   1.000  0.016
+        2  0.01584   0.016  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
++++ 3. get fit data (4789 entries) CPU time: 1.4 s, real time: 2.22 s
+[#1] INFO:Minization -- RooMinuit::synchronize: value of parameter phoRes changed from 3 to 2.06962
+[#1] INFO:Minization -- RooMinuit::synchronize: error/step size of parameter phoRes changed from 1.45 to 1
+[#1] INFO:Minization -- RooMinuit::synchronize: value of parameter phoScale changed from 0 to 0.445889
+[#1] INFO:Minization -- RooMinuit::synchronize: error/step size of parameter phoScale changed from 10 to 1
+[#0] WARNING:Minization -- RooMinuit::synchronize: WARNING: no initial error estimate available for signal_N: using 1
+[#0] WARNING:Minization -- RooMinuit::synchronize: WARNING: no initial error estimate available for zj_N: using 1
+ **********
+ **   13 **HESSE        2000
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_pm_fitdata1) constructing test statistic for sub-range named fit
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'fit_nll_pm_fitdata1' created with bounds [60,120]
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_pm_fitdata1) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass|NormalizationRangeForfit]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #0
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE0) successfully forked server process 4387
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #1
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE1) successfully forked server process 4388
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #2
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE2) successfully forked server process 4389
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #3
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE3) successfully forked server process 4390
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #4
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE4) successfully forked server process 4391
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #5
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE5) successfully forked server process 4392
+[#1] INFO:Eval -- RooAbsTestStatistic::initMPMode: starting remote server process #6
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE6) successfully forked server process 4393
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass|NormalizationRangeForfit]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass|NormalizationRangeForfit]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass|NormalizationRangeForfit]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass|NormalizationRangeForfit]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+
+prevFCN = -18722.50648  
+prevFCN = -18722.50648  phoRes=2.174, 
+prevFCN = -18720.76993  phoRes=1.967, 
+prevFCN = -18723.96269  phoRes=2.699, 
+prevFCN = -18708.99704  phoRes=1.519, 
+prevFCN = -18729.16222  phoRes=2.07, phoScale=0.5459, 
+prevFCN = -18722.16649  phoScale=0.3459, 
+prevFCN = -18722.45227  phoScale=0.9275, 
+prevFCN = -18717.23128  phoScale=-0.03574, 
+prevFCN = -18718.62988  phoScale=0.4459, signal_N=1000, 
+prevFCN = -18722.82547  signal_N=999.9, 
+prevFCN = -18722.18745  signal_N=1010, 
+prevFCN = -18754.85868  signal_N=989.8, 
+prevFCN = -18689.77829  signal_N=1000, zj_N=200.1, 
+prevFCN = -18722.77818  zj_N=199.9, 
+prevFCN = -18722.23473  zj_N=210.2, 
+prevFCN = -18749.96826  zj_N=189.8, 
+prevFCN = -18694.52998  phoRes=2.085, zj_N=200, 
+prevFCN = -18722.26953  phoRes=2.055, 
+prevFCN = -18722.73819  phoRes=2.073, 
+prevFCN = -18722.45951  phoRes=2.067, 
+prevFCN = -18722.55323  phoRes=2.07, phoScale=0.4565, 
+prevFCN = -18722.48905  phoScale=0.4353, 
+prevFCN = -18722.51935  phoScale=0.4459, signal_N=1001, 
+prevFCN = -18726.0496  signal_N=998.9, 
+prevFCN = -18718.95889  signal_N=1000, zj_N=200.9, 
+prevFCN = -18725.08527  zj_N=199.1, 
+prevFCN = -18719.92322  phoRes=2.699, phoScale=0.9275, zj_N=200, 
+prevFCN = -18702.77617  phoScale=0.4459, signal_N=1010, 
+prevFCN = -18741.4303  phoRes=2.07, phoScale=0.9275, 
+prevFCN = -18749.5895  phoRes=2.699, phoScale=0.4459, signal_N=1000, zj_N=210.2, 
+prevFCN = -18736.05907  phoRes=2.07, phoScale=0.9275, 
+prevFCN = -18744.66455  phoScale=0.4459, signal_N=1010, 
+prevFCN = -18782.04614   COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-18722.5 FROM HESSE     STATUS=OK             33 CALLS          34 TOTAL
+                     EDM=2876.59    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  phoRes       2.06962e+00   2.39501e-01   9.91168e-02  -9.32375e-01
+   2  phoScale     4.45889e-01   1.60377e-01   9.63262e-03   8.91790e-03
+   3  signal_N     1.00000e+03   2.19198e+01   1.02000e+01   1.00000e+03
+   4  zj_N         2.00000e+02   1.91507e+01   1.02000e+01   2.00000e+02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  5.739e-02 -4.585e-03  1.259e+00 -1.436e+00 
+ -4.585e-03  2.572e-02 -5.103e-02  5.851e-02 
+  1.259e+00 -5.103e-02  4.805e+02 -2.729e+02 
+ -1.436e+00  5.851e-02 -2.729e+02  3.668e+02 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.33620   1.000 -0.119  0.240 -0.313
+        2  0.12093  -0.119  1.000 -0.015  0.019
+        3  0.65123   0.240 -0.015  1.000 -0.650
+        4  0.66997  -0.313  0.019 -0.650  1.000
+[#1] INFO:Minization -- Command timer: Real time 0:00:05, CP time 1.770
+[#1] INFO:Minization -- Session timer: Real time 0:00:05, CP time 1.770, 2 slices
++++ 4. initial hesse (status: 0) CPU time: 1.83 s, real time: 5.69 s
+ **********
+ **   14 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+ **********
+ **   19 **MIGRAD        2000           1
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+phoRes=2.091, 
+prevFCN = -18722.16983  phoRes=2.048, 
+prevFCN = -18722.83265  phoRes=2.07, phoScale=0.4609, 
+prevFCN = -18722.48048  phoScale=0.4308, 
+prevFCN = -18722.5234  phoScale=0.4459, signal_N=1002, 
+prevFCN = -18727.5159  signal_N=998.4, 
+prevFCN = -18717.48813  signal_N=1000, zj_N=201.3, 
+prevFCN = -18726.15214  zj_N=198.7, 
+prevFCN = -18718.85189   FCN=-18722.5 FROM MIGRAD    STATUS=INITIATE        8 CALLS          42 TOTAL
+                     EDM=1438.3    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  phoRes       2.06962e+00   2.39501e-01   9.91168e-02   9.26421e+01
+   2  phoScale     4.45889e-01   1.60377e-01   9.63262e-03   7.13365e+01
+   3  signal_N     1.00000e+03   2.19198e+01   1.02000e+01  -3.19011e+00
+   4  zj_N         2.00000e+02   1.91507e+01   1.02000e+01  -2.71725e+00
+                               ERR DEF= 0.5
+phoRes=1.37, phoScale=0.4767, signal_N=1772, zj_N=348.2, 
+prevFCN = -20628.74395  phoRes=1.084, phoScale=0.4915, signal_N=2144, zj_N=419.7, 
+prevFCN = -21133.5454  phoRes=0.7478, phoScale=0.5119, signal_N=2654, zj_N=517.7, 
+prevFCN = -21591.73314  phoRes=0.437, phoScale=0.5361, signal_N=3262, zj_N=634.5, 
+prevFCN = -21900.99953  phoRes=0.2776, phoScale=0.5532, signal_N=3691, zj_N=716.8, 
+prevFCN = -22011.32659  phoRes=0.1922, phoScale=0.5658, signal_N=4007, zj_N=777.5, 
+prevFCN = -22049.84741  phoRes=0.1565, phoScale=0.5728, signal_N=4184, zj_N=811.4, 
+prevFCN = -22058.04632  phoRes=0.1604, 
+prevFCN = -22058.03739  phoRes=0.1528, 
+prevFCN = -22058.05497  phoRes=0.1817, 
+prevFCN = -22057.98826  phoRes=0.1359, 
+prevFCN = -22058.09387  phoRes=0.1565, phoScale=0.589, 
+prevFCN = -22058.03043  phoScale=0.5566, 
+prevFCN = -22058.05141  phoScale=0.5728, signal_N=4185, 
+prevFCN = -22058.10122  signal_N=4182, 
+prevFCN = -22057.99082  signal_N=4191, 
+prevFCN = -22058.27149  signal_N=4176, 
+prevFCN = -22057.81065  signal_N=4184, zj_N=812.9, 
+prevFCN = -22057.95693  zj_N=810, 
+prevFCN = -22058.13508  zj_N=817.3, 
+prevFCN = -22057.68041  zj_N=805.5, 
+prevFCN = -22058.40173  phoRes=0.1745, phoScale=0.5533, signal_N=4230, zj_N=783.3, 
+prevFCN = -22061.08616  phoRes=0.2712, phoScale=0.4751, signal_N=4415, zj_N=671, 
+prevFCN = -22070.63018  phoRes=0.54, phoScale=0.3359, signal_N=4745, zj_N=470.9, 
+prevFCN = -22076.64025  phoRes=0.6055, 
+prevFCN = -22076.74835  phoRes=0.4789, 
+prevFCN = -22076.51901  phoRes=0.5984, 
+prevFCN = -22076.74042  phoRes=0.4851, 
+prevFCN = -22076.53214  phoRes=0.54, phoScale=0.3519, 
+prevFCN = -22076.82638  phoScale=0.3199, 
+prevFCN = -22076.44292  phoScale=0.3359, signal_N=4752, 
+prevFCN = -22076.46988  signal_N=4738, 
+prevFCN = -22076.80139  signal_N=4745, zj_N=476.8, 
+prevFCN = -22076.42254  zj_N=465, 
+prevFCN = -22076.84544  phoRes=0.5824, phoScale=0.6089, signal_N=4750, zj_N=446.2, 
+prevFCN = -22079.04334  phoRes=0.5908, phoScale=0.6619, signal_N=4751, zj_N=441.4, 
+prevFCN = -22079.1045  phoRes=0.662, 
+prevFCN = -22079.11185  phoRes=0.5244, 
+prevFCN = -22079.00839  phoRes=0.6148, 
+prevFCN = -22079.11975  phoRes=0.5674, 
+prevFCN = -22079.07376  phoRes=0.6106, 
+prevFCN = -22079.11888  phoRes=0.5715, 
+prevFCN = -22079.07934  phoRes=0.5908, phoScale=0.6774, 
+prevFCN = -22079.06025  phoScale=0.6464, 
+prevFCN = -22079.1379  phoScale=0.6619, signal_N=4758, 
+prevFCN = -22078.95261  signal_N=4743, 
+prevFCN = -22079.24578  signal_N=4751, zj_N=446.8, 
+prevFCN = -22078.94735  zj_N=435.9, 
+prevFCN = -22079.25088  phoRes=0.6285, phoScale=0.6477, signal_N=4735, zj_N=431, 
+prevFCN = -22079.67026  phoRes=0.7341, phoScale=0.6104, signal_N=4695, zj_N=403.7, 
+prevFCN = -22080.3854  phoRes=0.7494, phoScale=0.6052, signal_N=4690, zj_N=399.9, 
+prevFCN = -22080.39728  phoRes=0.7717, 
+prevFCN = -22080.36758  phoRes=0.7274, 
+prevFCN = -22080.41953  phoRes=0.7759, 
+prevFCN = -22080.36109  phoRes=0.7233, 
+prevFCN = -22080.42295  phoRes=0.7494, phoScale=0.6205, 
+prevFCN = -22080.3872  phoScale=0.5899, 
+prevFCN = -22080.39637  phoScale=0.6052, signal_N=4698, 
+prevFCN = -22080.38452  signal_N=4682, 
+prevFCN = -22080.39912  signal_N=4690, zj_N=405.3, 
+prevFCN = -22080.37418  zj_N=394.6, 
+prevFCN = -22080.40917  phoRes=0.7267, phoScale=0.6003, signal_N=4685, zj_N=401.4, 
+prevFCN = -22080.41963  phoRes=0.695, phoScale=0.5932, signal_N=4679, zj_N=403.4, 
+prevFCN = -22080.43293  phoRes=0.6915, phoScale=0.5925, signal_N=4678, zj_N=403.6, 
+prevFCN = -22080.43313  phoRes=0.7169, 
+prevFCN = -22080.41909  phoRes=0.6666, 
+prevFCN = -22080.43893  phoRes=0.7202, 
+prevFCN = -22080.41661  phoRes=0.6634, 
+prevFCN = -22080.43912  phoRes=0.6915, phoScale=0.6074, 
+prevFCN = -22080.4357  phoScale=0.5775, 
+prevFCN = -22080.42035  phoScale=0.5925, signal_N=4686, 
+prevFCN = -22080.43217  signal_N=4671, 
+prevFCN = -22080.42354  signal_N=4678, zj_N=408.8, 
+prevFCN = -22080.4178  zj_N=398.4, 
+prevFCN = -22080.43792  phoRes=0.6766, phoScale=0.6015, signal_N=4685, zj_N=397.8, 
+prevFCN = -22080.45132  phoRes=0.6669, phoScale=0.6075, signal_N=4690, zj_N=393.9, 
+prevFCN = -22080.45481  phoRes=0.695, 
+prevFCN = -22080.44891  phoRes=0.6394, 
+prevFCN = -22080.45152  phoRes=0.6669, phoScale=0.6226, 
+prevFCN = -22080.44897  phoScale=0.5923, 
+prevFCN = -22080.4498  phoScale=0.6075, signal_N=4697, 
+prevFCN = -22080.44935  signal_N=4683, 
+prevFCN = -22080.44977  signal_N=4690, zj_N=399.1, 
+prevFCN = -22080.44943  zj_N=388.8, 
+prevFCN = -22080.44959  phoRes=0.6636, phoScale=0.6072, signal_N=4690, zj_N=394.1, 
+prevFCN = -22080.45489  phoRes=0.6638, phoScale=0.6072, signal_N=4690, zj_N=394.1, 
+prevFCN = -22080.45489  phoRes=0.6633, phoScale=0.6072, signal_N=4690, zj_N=394.1, 
+prevFCN = -22080.45489  phoRes=0.6934, 
+prevFCN = -22080.44951  phoRes=0.634, 
+prevFCN = -22080.44989  phoRes=0.6633, phoScale=0.6221, 
+prevFCN = -22080.44956  phoScale=0.5923, 
+prevFCN = -22080.44968  phoScale=0.6072, signal_N=4697, 
+prevFCN = -22080.44963  signal_N=4682, 
+prevFCN = -22080.44963  signal_N=4690, zj_N=399.3, 
+prevFCN = -22080.44964  zj_N=389, 
+prevFCN = -22080.44962   MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+zj_N=394.1, 
+prevFCN = -22080.45489  phoRes=0.6934, 
+prevFCN = -22080.44951  phoRes=0.634, 
+prevFCN = -22080.44989  phoRes=0.6633, phoScale=0.6221, 
+prevFCN = -22080.44956  phoScale=0.5923, 
+prevFCN = -22080.44968  phoScale=0.6072, signal_N=4697, 
+prevFCN = -22080.44963  signal_N=4682, 
+prevFCN = -22080.44963  signal_N=4690, zj_N=399.3, 
+prevFCN = -22080.44964  zj_N=389, 
+prevFCN = -22080.44962  phoRes=0.6693, zj_N=394.1, 
+prevFCN = -22080.45469  phoRes=0.6574, 
+prevFCN = -22080.45468  phoRes=0.6645, 
+prevFCN = -22080.45488  phoRes=0.6621, 
+prevFCN = -22080.45488  phoRes=0.6636, 
+prevFCN = -22080.45489  phoRes=0.6631, 
+prevFCN = -22080.45489  phoRes=0.6633, phoScale=0.6102, 
+prevFCN = -22080.45465  phoScale=0.6042, 
+prevFCN = -22080.45469  phoScale=0.6078, 
+prevFCN = -22080.45488  phoScale=0.6066, 
+prevFCN = -22080.45489  phoScale=0.6073, 
+prevFCN = -22080.45489  phoScale=0.6071, 
+prevFCN = -22080.45489  phoScale=0.6072, signal_N=4691, 
+prevFCN = -22080.45468  signal_N=4688, 
+prevFCN = -22080.45468  signal_N=4690, 
+prevFCN = -22080.45488  signal_N=4689, 
+prevFCN = -22080.45488  signal_N=4690, zj_N=395.2, 
+prevFCN = -22080.45468  zj_N=393.1, 
+prevFCN = -22080.45468  zj_N=394.3, 
+prevFCN = -22080.45488  zj_N=393.9, 
+prevFCN = -22080.45488  zj_N=394.2, 
+prevFCN = -22080.45489  zj_N=394.1, 
+prevFCN = -22080.45489  phoRes=0.6934, phoScale=0.6221, zj_N=394.1, 
+prevFCN = -22080.44254  phoScale=0.6072, signal_N=4697, 
+prevFCN = -22080.44442  phoRes=0.6633, phoScale=0.6221, 
+prevFCN = -22080.44435  phoRes=0.6934, phoScale=0.6072, signal_N=4690, zj_N=399.3, 
+prevFCN = -22080.44278  phoRes=0.6633, phoScale=0.6221, 
+prevFCN = -22080.44384  phoScale=0.6072, signal_N=4697, 
+prevFCN = -22080.43781   COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-22080.5 FROM MIGRAD    STATUS=CONVERGED     140 CALLS         174 TOTAL
+                     EDM=2.11041e-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  phoRes       6.63323e-01   2.99972e-01   8.97249e-03  -2.43752e-03
+   2  phoScale     6.07196e-01   1.47388e-01   2.98781e-04   4.75654e-01
+   3  signal_N     4.68971e+03   9.35734e+01   7.43220e+00   6.66940e-07
+   4  zj_N         3.94128e+02   6.56854e+01   5.16455e+00   1.46386e-07
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  9.023e-02 -6.547e-03  3.685e+00 -3.697e+00 
+ -6.547e-03  2.172e-02  3.079e-01 -3.088e-01 
+  3.685e+00  3.079e-01  8.756e+03 -3.890e+03 
+ -3.697e+00 -3.088e-01 -3.890e+03  4.315e+03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.24308   1.000 -0.148  0.131 -0.187
+        2  0.15994  -0.148  1.000  0.022 -0.032
+        3  0.63300   0.131  0.022  1.000 -0.633
+        4  0.64247  -0.187 -0.032 -0.633  1.000
+[#1] INFO:Minization -- Command timer: Real time 0:00:19, CP time 7.330
+[#1] INFO:Minization -- Session timer: Real time 0:00:24, CP time 9.100, 3 slices
++++ 5. migrad (status: 0) CPU time: 7.33 s, real time: 19.40 s
+ **********
+ **   24 **HESSE        2000
+ **********
+
+prevFCN = -22080.45489  phoRes=0.6636, 
+prevFCN = -22080.45489  phoRes=0.6631, 
+prevFCN = -22080.45489  phoRes=0.6633, phoScale=0.6073, 
+prevFCN = -22080.45489  phoScale=0.6071, 
+prevFCN = -22080.45489  phoScale=0.6194, 
+prevFCN = -22080.4513  phoScale=0.595, 
+prevFCN = -22080.45143  phoScale=1.084, 
+prevFCN = -22075.27033  phoScale=0.1306, 
+prevFCN = -22075.30395  phoScale=0.6072, signal_N=4690, 
+prevFCN = -22080.45488  signal_N=4689, 
+prevFCN = -22080.45488  signal_N=4690, zj_N=394.2, 
+prevFCN = -22080.45489  zj_N=394.1, 
+prevFCN = -22080.45489  phoRes=0.6634, zj_N=394.1, 
+prevFCN = -22080.45489  phoRes=0.6633, 
+prevFCN = -22080.45489  phoRes=0.6633, phoScale=0.618, 
+prevFCN = -22080.45207  phoScale=0.5964, 
+prevFCN = -22080.45221  phoScale=0.6093, 
+prevFCN = -22080.45476  phoScale=0.605, 
+prevFCN = -22080.45479  phoScale=0.6076, 
+prevFCN = -22080.45488  phoScale=0.6068, 
+prevFCN = -22080.45489  phoScale=0.6072, signal_N=4690, 
+prevFCN = -22080.45489  signal_N=4690, 
+prevFCN = -22080.45489  signal_N=4690, zj_N=394.1, 
+prevFCN = -22080.45489  zj_N=394.1, 
+prevFCN = -22080.45489  phoRes=0.6636, phoScale=1.084, zj_N=394.1, 
+prevFCN = -22075.26997  phoScale=0.6072, signal_N=4690, 
+prevFCN = -22080.45488  phoRes=0.6633, phoScale=1.084, 
+prevFCN = -22075.27037  phoRes=0.6636, phoScale=0.6072, signal_N=4690, zj_N=394.2, 
+prevFCN = -22080.45489  phoRes=0.6633, phoScale=1.084, 
+prevFCN = -22075.27024  phoScale=0.6072, signal_N=4690, 
+prevFCN = -22080.45488   COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-22080.5 FROM HESSE     STATUS=OK             31 CALLS         205 TOTAL
+                     EDM=1.34902e-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  phoRes       6.63323e-01   2.98548e-01   7.17799e-05  -1.23354e+00
+   2  phoScale     6.07196e-01   1.49717e-01   9.53152e-03   1.21442e-02
+   3  signal_N     4.68971e+03   9.35929e+01   2.97288e-01   4.68971e+03
+   4  zj_N         3.94128e+02   6.55668e+01   4.13164e-02   3.94128e+02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  8.937e-02 -5.963e-03  3.353e+00 -3.356e+00 
+ -5.963e-03  2.242e-02  2.097e-01 -2.099e-01 
+  3.353e+00  2.097e-01  8.760e+03 -3.885e+03 
+ -3.356e+00 -2.099e-01 -3.885e+03  4.299e+03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.21976   1.000 -0.133  0.120 -0.171
+        2  0.14063  -0.133  1.000  0.015 -0.021
+        3  0.63320   0.120  0.015  1.000 -0.633
+        4  0.64083  -0.171 -0.021 -0.633  1.000
+[#1] INFO:Minization -- Command timer: Real time 0:00:04, CP time 1.630
+[#1] INFO:Minization -- Session timer: Real time 0:00:29, CP time 10.730, 4 slices
++++ 6. hesse (status: 0) CPU time: 1.63 s, real time: 4.90 s
+ **********
+ **   29 **MINOS        2000
+ **********
+phoRes=0.9619, phoScale=0.5872, signal_N=4701, zj_N=382.9, 
+prevFCN = -22080.15131  phoScale=0.6025, 
+prevFCN = -22080.14254  phoScale=0.572, 
+prevFCN = -22080.14968  phoScale=0.5872, signal_N=4702, 
+prevFCN = -22080.15131  signal_N=4700, 
+prevFCN = -22080.15124  signal_N=4701, zj_N=383, 
+prevFCN = -22080.15125  zj_N=382.8, 
+prevFCN = -22080.15137  phoScale=0.5824, signal_N=4704, zj_N=379.7, 
+prevFCN = -22080.15318  phoScale=0.5977, 
+prevFCN = -22080.14799  phoScale=0.5671, 
+prevFCN = -22080.14783  phoScale=0.5824, signal_N=4710, 
+prevFCN = -22080.14982  signal_N=4698, 
+prevFCN = -22080.1498  signal_N=4704, zj_N=380.5, 
+prevFCN = -22080.15305  zj_N=378.8, 
+prevFCN = -22080.15304  zj_N=384.8, 
+prevFCN = -22080.14797  zj_N=374.5, 
+prevFCN = -22080.14786  phoRes=1.048, zj_N=379.7, 
+prevFCN = -22080.02472  phoScale=0.5977, 
+prevFCN = -22080.01443  phoScale=0.5671, 
+prevFCN = -22080.02451  phoScale=0.5824, signal_N=4712, 
+prevFCN = -22080.02005  signal_N=4697, 
+prevFCN = -22080.01887  signal_N=4704, zj_N=384.8, 
+prevFCN = -22080.0146  zj_N=374.5, 
+prevFCN = -22080.02435  phoScale=0.5758, signal_N=4708, zj_N=375.6, 
+prevFCN = -22080.02793  phoScale=0.5911, 
+prevFCN = -22080.02259  phoScale=0.5605, 
+prevFCN = -22080.02276  phoScale=0.5758, signal_N=4716, 
+prevFCN = -22080.02267  signal_N=4701, 
+prevFCN = -22080.02267  signal_N=4708, zj_N=380.8, 
+prevFCN = -22080.02264  zj_N=370.5, 
+prevFCN = -22080.02266  phoRes=1.098, zj_N=375.6, 
+prevFCN = -22079.95575  phoScale=0.5911, 
+prevFCN = -22079.94713  phoScale=0.5604, 
+prevFCN = -22079.95386  phoScale=0.5758, signal_N=4716, 
+prevFCN = -22079.95087  signal_N=4701, 
+prevFCN = -22079.9501  signal_N=4708, zj_N=380.8, 
+prevFCN = -22079.94714  zj_N=370.5, 
+prevFCN = -22079.95386  phoScale=0.5713, signal_N=4711, zj_N=372.8, 
+prevFCN = -22079.95719  phoScale=0.5866, 
+prevFCN = -22079.95194  phoScale=0.5559, 
+prevFCN = -22079.952  phoScale=0.5713, signal_N=4718, 
+prevFCN = -22079.95194  signal_N=4704, 
+prevFCN = -22079.95193  signal_N=4711, zj_N=378, 
+prevFCN = -22079.95192  zj_N=367.7, 
+prevFCN = -22079.95191  phoRes=0.3648, phoScale=0.6271, signal_N=4678, zj_N=405.4, 
+prevFCN = -22079.90817  phoScale=0.6425, 
+prevFCN = -22079.89229  phoScale=0.6117, 
+prevFCN = -22079.91355  phoScale=0.6271, signal_N=4686, 
+prevFCN = -22079.90454  signal_N=4671, 
+prevFCN = -22079.90125  signal_N=4678, zj_N=410.5, 
+prevFCN = -22079.88984  zj_N=400.2, 
+prevFCN = -22079.9161  phoScale=0.6131, signal_N=4690, zj_N=394.3, 
+prevFCN = -22079.92835  phoScale=0.6285, 
+prevFCN = -22079.92319  phoScale=0.5976, 
+prevFCN = -22079.92256  phoScale=0.6131, signal_N=4697, 
+prevFCN = -22079.92298  signal_N=4682, 
+prevFCN = -22079.9232  signal_N=4690, zj_N=399.5, 
+prevFCN = -22079.92291  zj_N=389.1, 
+prevFCN = -22079.92316  phoScale=0.6135, signal_N=4690, zj_N=394.3, 
+prevFCN = -22079.92835  phoScale=0.6133, signal_N=4690, zj_N=394.3, 
+prevFCN = -22079.92835  phoScale=0.6284, 
+prevFCN = -22079.92324  phoScale=0.5982, 
+prevFCN = -22079.92295  phoScale=0.6133, signal_N=4697, 
+prevFCN = -22079.92304  signal_N=4682, 
+prevFCN = -22079.92314  signal_N=4690, zj_N=399.4, 
+prevFCN = -22079.92303  zj_N=389.1, 
+prevFCN = -22079.92315  phoRes=0.3724, zj_N=394.3, 
+prevFCN = -22079.95769  phoScale=0.6284, 
+prevFCN = -22079.95266  phoScale=0.5982, 
+prevFCN = -22079.95218  phoScale=0.6133, signal_N=4697, 
+prevFCN = -22079.95234  signal_N=4682, 
+prevFCN = -22079.95251  signal_N=4690, zj_N=399.4, 
+prevFCN = -22079.95258  zj_N=389.1, 
+prevFCN = -22079.95226  phoScale=0.6136, signal_N=4689, zj_N=394.4, 
+prevFCN = -22079.95769  phoScale=0.6135, signal_N=4689, zj_N=394.4, 
+prevFCN = -22079.95769  phoScale=0.6135, signal_N=4689, zj_N=394.4, 
+prevFCN = -22079.95769  phoScale=0.6287, 
+prevFCN = -22079.9525  phoScale=0.5984, 
+prevFCN = -22079.95236  phoScale=0.6135, signal_N=4697, 
+prevFCN = -22079.9524  signal_N=4682, 
+prevFCN = -22079.95245  signal_N=4689, zj_N=399.6, 
+prevFCN = -22079.95247  zj_N=389.2, 
+prevFCN = -22079.95238  phoRes=0.6242, phoScale=0.7569, signal_N=4691, zj_N=392.7, 
+prevFCN = -22079.95719  phoRes=0.6246, 
+prevFCN = -22079.95721  phoRes=0.6237, 
+prevFCN = -22079.95716  phoRes=0.6242, signal_N=4699, 
+prevFCN = -22079.95207  signal_N=4684, 
+prevFCN = -22079.95178  signal_N=4691, zj_N=397.9, 
+prevFCN = -22079.95071  zj_N=387.6, 
+prevFCN = -22079.95316  phoRes=0.6291, signal_N=4692, zj_N=391.5, 
+prevFCN = -22079.95744  phoRes=0.6287, signal_N=4692, zj_N=391.6, 
+prevFCN = -22079.95745  phoRes=0.6333, 
+prevFCN = -22079.95729  phoRes=0.6241, 
+prevFCN = -22079.95732  phoRes=0.6287, signal_N=4700, 
+prevFCN = -22079.95219  signal_N=4685, 
+prevFCN = -22079.95218  signal_N=4692, zj_N=396.7, 
+prevFCN = -22079.95213  zj_N=386.4, 
+prevFCN = -22079.95222  phoRes=0.7038, phoScale=0.4575, signal_N=4688, zj_N=395.5, 
+prevFCN = -22079.95911  phoRes=0.7341, 
+prevFCN = -22079.95768  phoRes=0.6743, 
+prevFCN = -22079.95148  phoRes=0.7038, signal_N=4696, 
+prevFCN = -22079.95366  signal_N=4681, 
+prevFCN = -22079.95402  signal_N=4688, zj_N=400.7, 
+prevFCN = -22079.95533  zj_N=390.4, 
+prevFCN = -22079.95233  phoRes=0.712, signal_N=4687, zj_N=396.6, 
+prevFCN = -22079.95976  phoRes=0.713, signal_N=4687, zj_N=396.7, 
+prevFCN = -22079.95976  phoRes=0.7448, signal_N=4687, zj_N=396.6, 
+prevFCN = -22079.95438  phoRes=0.68, 
+prevFCN = -22079.95409  phoRes=0.712, signal_N=4695, 
+prevFCN = -22079.95453  signal_N=4680, 
+prevFCN = -22079.95447  signal_N=4687, zj_N=401.8, 
+prevFCN = -22079.95429  zj_N=391.4, 
+prevFCN = -22079.95472  phoRes=0.7126, signal_N=4687, zj_N=396.4, 
+prevFCN = -22079.95977  phoRes=0.7148, signal_N=4688, zj_N=395.7, 
+prevFCN = -22079.95973  phoRes=0.713, signal_N=4688, zj_N=396.3, 
+prevFCN = -22079.95978  phoRes=0.745, 
+prevFCN = -22079.95445  phoRes=0.6817, 
+prevFCN = -22079.95455  phoRes=0.713, signal_N=4695, 
+prevFCN = -22079.9545  signal_N=4680, 
+prevFCN = -22079.95453  signal_N=4688, zj_N=401.4, 
+prevFCN = -22079.95462  zj_N=391.1, 
+prevFCN = -22079.9544  phoRes=0.6997, phoScale=0.6094, signal_N=4783, zj_N=352.6, 
+prevFCN = -22079.96094  phoRes=0.7314, 
+prevFCN = -22079.95863  phoRes=0.6688, 
+prevFCN = -22079.95376  phoRes=0.6997, phoScale=0.6246, 
+prevFCN = -22079.95653  phoScale=0.5943, 
+prevFCN = -22079.95453  phoScale=0.6094, zj_N=357.8, 
+prevFCN = -22079.95612  zj_N=347.5, 
+prevFCN = -22079.95507  phoRes=0.7064, phoScale=0.6104, zj_N=352.7, 
+prevFCN = -22079.9613  phoRes=0.7082, phoScale=0.6107, zj_N=352.8, 
+prevFCN = -22079.9613  phoRes=0.7074, phoScale=0.6106, zj_N=352.7, 
+prevFCN = -22079.96131  phoRes=0.7409, 
+prevFCN = -22079.95566  phoRes=0.6747, 
+prevFCN = -22079.95598  phoRes=0.7074, phoScale=0.6255, 
+prevFCN = -22079.95578  phoScale=0.5956, 
+prevFCN = -22079.95635  phoScale=0.6106, zj_N=357.9, 
+prevFCN = -22079.95584  zj_N=347.6, 
+prevFCN = -22079.95626  phoRes=0.7071, phoScale=0.6102, zj_N=352.7, 
+prevFCN = -22079.96132  phoRes=0.7071, phoScale=0.6101, zj_N=352.6, 
+prevFCN = -22079.96132  phoRes=0.7071, phoScale=0.6102, zj_N=352.6, 
+prevFCN = -22079.96132  phoRes=0.7399, 
+prevFCN = -22079.9561  phoRes=0.6751, 
+prevFCN = -22079.95603  phoRes=0.7071, phoScale=0.6251, 
+prevFCN = -22079.95606  phoScale=0.5952, 
+prevFCN = -22079.95602  phoScale=0.6102, zj_N=357.8, 
+prevFCN = -22079.95606  zj_N=347.5, 
+prevFCN = -22079.95604  signal_N=4784, zj_N=352.6, 
+prevFCN = -22079.95492  phoRes=0.74, 
+prevFCN = -22079.9497  phoRes=0.675, 
+prevFCN = -22079.94961  phoRes=0.7071, phoScale=0.6251, 
+prevFCN = -22079.94968  phoScale=0.5952, 
+prevFCN = -22079.94963  phoScale=0.6102, zj_N=357.8, 
+prevFCN = -22079.94913  zj_N=347.5, 
+prevFCN = -22079.95017  phoRes=0.7075, phoScale=0.6102, zj_N=352.4, 
+prevFCN = -22079.95494  phoRes=0.7077, phoScale=0.6102, zj_N=352.3, 
+prevFCN = -22079.95493  phoRes=0.7076, phoScale=0.6102, zj_N=352.3, 
+prevFCN = -22079.95494  phoRes=0.7405, 
+prevFCN = -22079.94966  phoRes=0.6755, 
+prevFCN = -22079.94967  phoRes=0.7076, phoScale=0.6251, 
+prevFCN = -22079.94967  phoScale=0.5952, 
+prevFCN = -22079.94967  phoScale=0.6102, zj_N=357.5, 
+prevFCN = -22079.94975  zj_N=347.2, 
+prevFCN = -22079.94959  phoRes=0.628, phoScale=0.605, signal_N=4596, zj_N=435.6, 
+prevFCN = -22079.94924  phoRes=0.6588, 
+prevFCN = -22079.94521  phoRes=0.5981, 
+prevFCN = -22079.93897  phoRes=0.628, phoScale=0.6199, 
+prevFCN = -22079.94264  phoScale=0.59, 
+prevFCN = -22079.94532  phoScale=0.605, zj_N=440.8, 
+prevFCN = -22079.94474  zj_N=430.5, 
+prevFCN = -22079.94354  phoRes=0.6379, phoScale=0.602, zj_N=435.7, 
+prevFCN = -22079.94956  phoRes=0.6346, phoScale=0.603, zj_N=435.7, 
+prevFCN = -22079.94963  phoRes=0.6611, 
+prevFCN = -22079.94465  phoRes=0.6087, 
+prevFCN = -22079.94495  phoRes=0.6346, phoScale=0.6179, 
+prevFCN = -22079.94412  phoScale=0.588, 
+prevFCN = -22079.94459  phoScale=0.603, zj_N=440.9, 
+prevFCN = -22079.94479  zj_N=430.4, 
+prevFCN = -22079.94395  phoRes=0.6342, phoScale=0.6026, zj_N=435.9, 
+prevFCN = -22079.94964  phoRes=0.6343, phoScale=0.6027, zj_N=435.8, 
+prevFCN = -22079.94964  phoRes=0.6343, phoScale=0.6026, zj_N=435.8, 
+prevFCN = -22079.94964  phoRes=0.662, 
+prevFCN = -22079.94433  phoRes=0.6073, 
+prevFCN = -22079.94444  phoRes=0.6343, phoScale=0.6176, 
+prevFCN = -22079.94436  phoScale=0.5877, 
+prevFCN = -22079.9444  phoScale=0.6026, zj_N=441, 
+prevFCN = -22079.94443  zj_N=430.6, 
+prevFCN = -22079.94433  signal_N=4597, zj_N=435.8, 
+prevFCN = -22079.95491  phoRes=0.662, 
+prevFCN = -22079.9496  phoRes=0.6073, 
+prevFCN = -22079.9497  phoRes=0.6343, phoScale=0.6176, 
+prevFCN = -22079.94963  phoScale=0.5877, 
+prevFCN = -22079.94966  phoScale=0.6026, zj_N=441, 
+prevFCN = -22079.94926  zj_N=430.6, 
+prevFCN = -22079.95003  phoRes=0.6343, phoScale=0.6027, zj_N=435.7, 
+prevFCN = -22079.95492  phoRes=0.6343, phoScale=0.6027, zj_N=435.6, 
+prevFCN = -22079.95492  phoRes=0.6343, phoScale=0.6027, zj_N=435.6, 
+prevFCN = -22079.95492  phoRes=0.662, 
+prevFCN = -22079.94963  phoRes=0.6073, 
+prevFCN = -22079.94968  phoRes=0.6343, phoScale=0.6176, 
+prevFCN = -22079.94965  phoScale=0.5877, 
+prevFCN = -22079.94966  phoScale=0.6027, zj_N=440.8, 
+prevFCN = -22079.94967  zj_N=430.4, 
+prevFCN = -22079.94964  phoRes=0.6133, phoScale=0.604, signal_N=4630, zj_N=459.7, 
+prevFCN = -22079.95902  phoRes=0.6404, 
+prevFCN = -22079.95839  phoRes=0.5868, 
+prevFCN = -22079.93837  phoRes=0.6323, 
+prevFCN = -22079.95975  phoRes=0.5946, 
+prevFCN = -22079.94846  phoRes=0.6133, phoScale=0.6189, 
+prevFCN = -22079.95192  phoScale=0.5891, 
+prevFCN = -22079.95564  phoScale=0.604, signal_N=4638, 
+prevFCN = -22079.955  signal_N=4623, 
+prevFCN = -22079.95248  phoRes=0.638, phoScale=0.5995, signal_N=4631, 
+prevFCN = -22079.95938  phoRes=0.6262, phoScale=0.6016, signal_N=4631, 
+prevFCN = -22079.96042  phoRes=0.6461, 
+prevFCN = -22079.9573  phoRes=0.6065, 
+prevFCN = -22079.95764  phoRes=0.6262, phoScale=0.6166, 
+prevFCN = -22079.95443  phoScale=0.5866, 
+prevFCN = -22079.95587  phoScale=0.6016, signal_N=4638, 
+prevFCN = -22079.95574  signal_N=4624, 
+prevFCN = -22079.95459  phoRes=0.6259, phoScale=0.6006, signal_N=4631, 
+prevFCN = -22079.96046  phoRes=0.6259, phoScale=0.6006, signal_N=4631, 
+prevFCN = -22079.96046  phoRes=0.6527, 
+prevFCN = -22079.95508  phoRes=0.5998, 
+prevFCN = -22079.95518  phoRes=0.6259, phoScale=0.6156, 
+prevFCN = -22079.95518  phoScale=0.5857, 
+prevFCN = -22079.95523  phoScale=0.6006, signal_N=4639, 
+prevFCN = -22079.95523  signal_N=4624, 
+prevFCN = -22079.95517  signal_N=4631, zj_N=460.1, 
+prevFCN = -22079.95491  phoRes=0.6525, 
+prevFCN = -22079.94953  phoRes=0.6, 
+prevFCN = -22079.94989  phoRes=0.6259, phoScale=0.6156, 
+prevFCN = -22079.94959  phoScale=0.5857, 
+prevFCN = -22079.94971  phoScale=0.6006, signal_N=4639, 
+prevFCN = -22079.94922  signal_N=4624, 
+prevFCN = -22079.95008  phoRes=0.6256, phoScale=0.6006, signal_N=4631, 
+prevFCN = -22079.95492  phoRes=0.6257, phoScale=0.6006, signal_N=4631, 
+prevFCN = -22079.95492  phoRes=0.6524, phoScale=0.6006, signal_N=4631, 
+prevFCN = -22079.94959  phoRes=0.5996, 
+prevFCN = -22079.94938  phoRes=0.6256, phoScale=0.6155, 
+prevFCN = -22079.94967  phoScale=0.5856, 
+prevFCN = -22079.94965  phoScale=0.6006, signal_N=4638, 
+prevFCN = -22079.94966  signal_N=4624, 
+prevFCN = -22079.94966  phoRes=0.7156, phoScale=0.6104, signal_N=4749, zj_N=328.6, 
+prevFCN = -22079.95163  phoRes=0.744, 
+prevFCN = -22079.95329  phoRes=0.6879, 
+prevFCN = -22079.94306  phoRes=0.7156, phoScale=0.6254, 
+prevFCN = -22079.9478  phoScale=0.5954, 
+prevFCN = -22079.94488  phoScale=0.6104, signal_N=4756, 
+prevFCN = -22079.94771  signal_N=4742, 
+prevFCN = -22079.94506  phoRes=0.723, phoScale=0.6121, signal_N=4750, 
+prevFCN = -22079.95287  phoRes=0.7317, phoScale=0.6142, signal_N=4750, 
+prevFCN = -22079.9533  phoRes=0.7307, phoScale=0.614, signal_N=4750, 
+prevFCN = -22079.95331  phoRes=0.7662, 
+prevFCN = -22079.94842  phoRes=0.6961, 
+prevFCN = -22079.94664  phoRes=0.7307, phoScale=0.6289, 
+prevFCN = -22079.9461  phoScale=0.599, 
+prevFCN = -22079.95016  phoScale=0.614, signal_N=4758, 
+prevFCN = -22079.94775  signal_N=4743, 
+prevFCN = -22079.94835  phoRes=0.7337, phoScale=0.6115, signal_N=4750, 
+prevFCN = -22079.95364  phoRes=0.7373, phoScale=0.6085, signal_N=4750, 
+prevFCN = -22079.95362  phoRes=0.7354, phoScale=0.6101, signal_N=4750, 
+prevFCN = -22079.95368  phoRes=0.7693, 
+prevFCN = -22079.9483  phoRes=0.7022, 
+prevFCN = -22079.94834  phoRes=0.7354, phoScale=0.6252, 
+prevFCN = -22079.94866  phoScale=0.5951, 
+prevFCN = -22079.94801  phoScale=0.6101, signal_N=4757, 
+prevFCN = -22079.9485  signal_N=4743, 
+prevFCN = -22079.94834  phoRes=0.7351, phoScale=0.6106, signal_N=4750, 
+prevFCN = -22079.95368  phoRes=0.7352, phoScale=0.6104, signal_N=4750, 
+prevFCN = -22079.95369  phoRes=0.7352, phoScale=0.6103, signal_N=4750, 
+prevFCN = -22079.95369  phoRes=0.7689, 
+prevFCN = -22079.94842  phoRes=0.7024, 
+prevFCN = -22079.94843  phoRes=0.7352, phoScale=0.6252, 
+prevFCN = -22079.94863  phoScale=0.5954, 
+prevFCN = -22079.94822  phoScale=0.6103, signal_N=4757, 
+prevFCN = -22079.94847  signal_N=4743, 
+prevFCN = -22079.94837   FCN=-22080.5 FROM MINOS     STATUS=SUCCESSFUL    276 CALLS         481 TOTAL
+                     EDM=1.34902e-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  phoRes       6.63323e-01   2.98548e-01  -2.91655e-01   4.35982e-01
+   2  phoScale     6.07196e-01   1.49717e-01  -1.50454e-01   1.50101e-01
+   3  signal_N     4.68971e+03   9.35929e+01  -9.31081e+01   9.42044e+01
+   4  zj_N         3.94128e+02   6.55668e+01  -6.54879e+01   6.59373e+01
+                               ERR DEF= 0.5
+[#1] INFO:Minization -- Command timer: Real time 0:00:48, CP time 14.490
+[#1] INFO:Minization -- Session timer: Real time 0:01:18, CP time 25.220, 5 slices
++++ 7. minos (status: 0) CPU time: 14.49 s, real time: 48.45 s
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) only plotting range 'plot'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) p.d.f. curve is normalized using explicit choice of ranges 'plot'
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pm_Int[mmgMass|plot]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) only plotting range 'plot'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) p.d.f. curve is normalized using explicit choice of ranges 'plot'
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) directly selected PDF components: (zj0_pdf)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pm_Int[mmgMass|plot]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#0] WARNING:InputArguments -- RooAbsPdf::fitTo(phoEResPdf) WARNING: a likelihood fit is request of what appears to be weighted data. 
+       While the estimated values of the parameters will always be calculated taking the weights into account, 
+       there are multiple ways to estimate the errors on these parameter values. You are advised to make an 
+       explicit choice on the error calculation: 
+           - Either provide SumW2Error(kTRUE), to calculate a sum-of-weights corrected HESSE error matrix 
+             (error will be proportional to the number of events)
+           - Or provide SumW2Error(kFALSE), to return errors from original HESSE error matrix
+             (which will be proportional to the sum of the weights)
+       If you want the errors to reflect the information contained in the provided dataset, choose kTRUE. 
+       If you want the errors to reflect the precision you would be able to obtain with an unweighted dataset 
+       with 'sum-of-weights' events, choose kFALSE.
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_data) constructing test statistic for sub-range named fit
+[#1] INFO:Fitting -- RooAbsOptTestStatistic::ctor(nll_phoEResPdf_data) fixing interpretation of coefficients of any RooAddPdf to full domain of observables 
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:Minization -- RooMinuit::optimizeConst: activating const optimization
+ **********
+ **    9 **SET STR           2
+ **********
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+ **********
+ **   14 **MIGRAD        1000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  2.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=10871.3 FROM HESSE     STATUS=OK             30 CALLS          31 TOTAL
+                     EDM=35.519    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  r            2.06962e+00   3.63840e-02   1.24138e-02   1.18158e+03
+   2  s            4.45889e-01   2.85872e-02   4.40014e-03   2.91108e+03
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=10871.3 FROM HESSE     STATUS=OK             36 CALLS          78 TOTAL
+                     EDM=35.5806    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  r            2.06962e+00   3.64114e-02   1.22040e-02   1.18073e+03
+   2  s            4.45889e-01   2.86168e-02   4.22939e-03   2.90810e+03
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=10871.3 FROM HESSE     STATUS=OK             36 CALLS         125 TOTAL
+                     EDM=35.5802    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  r            2.06962e+00   3.64114e-02   1.22040e-02   1.18073e+03
+   2  s            4.45889e-01   2.86167e-02   4.22987e-03   2.90811e+03
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=10871.3 FROM MIGRAD    STATUS=FAILED        135 CALLS         136 TOTAL
+                     EDM=35.5802    STRATEGY= 2      ERR MATRIX APPROXIMATE
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  r            2.06962e+00   3.64114e-02  -0.00000e+00   1.18073e+03
+   2  s            4.45889e-01   2.86167e-02  -0.00000e+00   2.90811e+03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  1.326e-03  2.113e-05 
+  2.113e-05  8.189e-04 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.02028   1.000  0.020
+        2  0.02028   0.020  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **   19 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=10871.3 FROM HESSE     STATUS=OK             36 CALLS         172 TOTAL
+                     EDM=71.1605    STRATEGY= 2      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  r            2.06962e+00   3.64114e-02   1.22040e-02  -9.87098e-01
+   2  s            4.45889e-01   2.86167e-02   4.22987e-03   2.97303e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  1.326e-03  2.113e-05 
+  2.113e-05  8.189e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.02028   1.000  0.020
+        2  0.02028   0.020  1.000
+[#1] INFO:Minization -- RooMinuit::optimizeConst: deactivating const optimization
+[#1] INFO:Eval -- RooRealVar::setRange(phoERes) new range named 'varbins' created with bounds [-50,50]
+[#1] INFO:InputArguments -- RooAbsData::plotOn(data) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:InputArguments -- RooAbsData::plotOn(data) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:Plotting -- RooPlot::updateFitRangeNorm: New event count of 4447 will supercede previous event count of 4447 for normalization of PDF projections
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes|varbins]_Norm[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 5 for -6--5.25
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 6 for -5.25--4.75
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 7 for -4.75--4.25
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 8 for -4.25--3.75
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 20 for -1--0.75
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 21 for -0.75--0.5
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 22 for -0.5--0.25
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 23 for -0.25-0
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 28 for 1-1.25
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 29 for 1.25-1.5
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 30 for 1.5-1.75
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 31 for 1.75-2
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 42 for 4.5-4.75
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 44 for 5-5.25
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 49 for 7-7.5
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_data_response_varbins)::chiSquare(..) Interpolating bin 53 for 10.5-11.5
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_pulls
+[#1] INFO:InputArguments -- RooAbsData::plotOn(data) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:InputArguments -- RooAbsData::plotOn(data) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:Plotting -- RooPlot::updateFitRangeNorm: New event count of 4447 will supercede previous event count of 4447 for normalization of PDF projections
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(phoEResPdf_Int[phoERes|varbins]_Norm[phoERes]) using numeric integrator RooIntegrator1D to calculate Int(phoERes)
+[#1] INFO:Eval -- RooRealVar::setRange(mmgMass) new range named 'varbins' created with bounds [60,120]
+[#1] INFO:InputArguments -- RooAbsData::plotOn(fitdata1) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:InputArguments -- RooAbsData::plotOn(fitdata1) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:Plotting -- RooPlot::updateFitRangeNorm: New event count of 4887 will supercede previous event count of 4887 for normalization of PDF projections
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) directly selected PDF components: (zj0_pdf,exp_pdf)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pm_Int[mmgMass|varbins]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) directly selected PDF components: (exp_pdf)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pm_Int[mmgMass|varbins]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pm_Int[mmgMass|varbins]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_fitdata1_peak_varbins)::chiSquare(..) Interpolating bin 13 for 84.5-85
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_fitdata1_peak_varbins)::chiSquare(..) Interpolating bin 25 for 90.5-91
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_fitdata1_peak_varbins)::chiSquare(..) Interpolating bin 40 for 98-98.5
+[#0] WARNING:InputArguments -- cit::RooChi2Calculator(plotname=mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_fitdata1_peak_varbins)::chiSquare(..) Interpolating bin 43 for 99.5-100
+[#0] ERROR:InputArguments -- RooPlot::findObject(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_fitdata1_peak_varbins) cannot find object h_data
+[#0] ERROR:InputArguments -- RooPlot::findObject(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_fitdata1_peak_varbins) cannot find object h_data_fit1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) importing dataset mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_pulls
+[#0] ERROR:ObjectHandling -- RooWorkspace::import(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_workspace) ERROR dataset with name mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_pulls already exists in workspace, import aborted
+[#1] INFO:InputArguments -- RooAbsData::plotOn(fitdata1) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:InputArguments -- RooAbsData::plotOn(fitdata1) INFO: dataset has non-integer weights, auto-selecting SumW2 errors instead of Poisson errors
+[#1] INFO:Plotting -- RooPlot::updateFitRangeNorm: New event count of 4887 will supercede previous event count of 4887 for normalization of PDF projections
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) directly selected PDF components: (zj0_pdf,exp_pdf)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pm_Int[mmgMass|varbins]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) directly selected PDF components: (exp_pdf)
+[#1] INFO:Plotting -- RooAbsPdf::plotOn(pm) indirectly selected PDF components: ()
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pm_Int[mmgMass|varbins]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(zj0_pdf_Int[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(pm_Int[mmgMass|varbins]_Norm[mmgMass]) using numeric integrator RooIntegrator1D to calculate Int(mmgMass)
+[#0] ERROR:InputArguments -- RooPlot::findObject(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_fitdata1_peak_varbins) cannot find object h_data
+[#0] ERROR:InputArguments -- RooPlot::findObject(mc_EB_sixie_R9Low_0_R9High_0.94_PtLow_35_PtHigh_999_fitdata1_peak_varbins) cannot find object h_data_fit1
++++ 8. fast plots CPU time: 3.59 s, real time: 5.98 s
++++ 14. outro CPU time: 1.28 s, real time: 2.88 s
++++ TOTAL CPU time: 171.18 s, real time: 275.81 s
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE0) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE1) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE2) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE3) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE4) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE5) server process terminating
+[#1] INFO:Minization -- RooRealMPFE::initialize(nll_pm_fitdata1_1ae25a20_MPFE6) server process terminating

@@ -28,8 +28,8 @@ TreeVer="sixie"
 Data="mc"
 R9Low=0
 R9High=0.94
-PtLow=20
-PtHigh=999
+PtLow=25
+PtHigh=30
 		
 # make directory where to output root file
 # mkdir -p /wntmp/jduarte/model1/

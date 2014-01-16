@@ -788,8 +788,9 @@ def build_signal_model():
     # phortargets =  [0.5 + 0.5 * i for i in range(30)]
 
     ## This was used as a default for Adi's placeholders plots
-    phortargets = [0.1, 0.5, 1, 2, 3, 4, 5, 7, 10, 15, 25]
- 
+    #phortargets = [0.1, 0.5, 1, 2, 3, 4, 5, 7, 10, 15, 25]
+    phortargets = [0.15, 0.55, 1.1, 2.1, 3.1, 4.1, 5.1, 7.1, 10.1, 15.1, 25.1]
+    #phortargets = [0.1, 0.3, 0.6, 0.9, 1.2, 2.2, 3.2, 4.2, 5.2, 7.2, 10.5, 15.5, 25]
     ## Trying to find something that would not converge to the reference value
     ## for the EGM plots
     # phortargets = [0.1, 0.5, 1, 3, 5, 7, 10, 15, 25]
@@ -1118,7 +1119,8 @@ def process_real_data_single_dataset(label):
     '''
     global title_prefix
     if label == 'data':
-        title_prefix = '2011A+B'
+        #title_prefix = '2011A+B'
+        title_prefix = '2012 ABCD'
     else:
         title_prefix = label
     

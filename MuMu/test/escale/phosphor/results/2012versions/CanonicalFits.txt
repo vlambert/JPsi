@@ -1,0 +1,21 @@
+// ================================================ //
+//                                                  //
+//    Explanation for extracting the components     //
+//             of the energy resolution             //
+//                                                  //
+//          Valere Lambert, Caltech 2014            //
+//                                                  //
+// ================================================ //
+
+# We extract the constant, stochastic, and noise components of the energy resolution 
+# by fitting the relationship between the resolution and pt.
+
+# For each analysis on must first determine the centers of each pt bin using et_bins.py in the results directory.
+# These are added to regression_restrue.py, regression_resdata.py and regression_resmc.py in order to plot the 
+# resolution against pt with correct error bars.
+
+# Run regression_restrue.py, regression_resmc.py and regression_resdata.py in that order to plot the relationship
+# between resolution and pt. The results we be saved in ROOT files which are read by MCTruthRes_Pt.py, MCRes_Pt.py
+# and DataRes_Pt.py to fit the plots and extract the resolution contributions. 
+
+# frp_sixie_valere.py plots the energy scale against pt 

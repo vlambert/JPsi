@@ -5,7 +5,7 @@ source Phosphor_qsub_sixie_HighR9HighNV.sh
 source Phosphor_qsub_sixie_HighR9LowNV.sh
 
 # General Categories
-#source Phosphor_qsub_sixie_LowR9.sh
-#source Phosphor_qsub_sixie_HighR9.sh
-#source Phosphor_qsub_sixie_LNV.sh
-#source Phosphor_qusb_sixie_HNV.sh
+source Phosphor_qsub_sixie_LowR9.sh
+source Phosphor_qsub_sixie_HighR9.sh
+source Phosphor_qsub_sixie_LNV.sh
+source Phosphor_qsub_sixie_HNV.sh

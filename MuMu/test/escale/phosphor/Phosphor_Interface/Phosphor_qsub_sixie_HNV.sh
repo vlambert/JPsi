@@ -3,8 +3,8 @@
 QSUBDIR=/home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface/QsubScripts_sixie_ExpFit_HNV
 
 NEWDIR=`date | gawk '{ print $1 $2 $3"_" $6 }'`
-RESULTS=HighNV_2012Full
-LOGS=HighNV_2012Full_Logs
+RESULTS=HighNV
+LOGS=HighNV_Logs
 TreeVer="sixie"
 
 RESDIR=Dir_Results

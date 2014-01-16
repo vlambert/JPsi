@@ -1,0 +1,23 @@
+// ==================================================== //
+//                                                      //
+//     Explanation of PHOSPHOR Dumper scripts           //
+//                                                      //
+//          Valere Lambert, Caltech 2014                //
+//                                                      //
+// ==================================================== //
+
+# The PHOSPHOR dumper scripts reads the saved ROOT files from the PHOSPHOR Fits
+# and grabs the results of the scale and resolution values as snippets of code
+# for the PhosphorCorrectorFunctor
+
+# JanFitExp_phosphorDumper.py was the original dumper
+
+# phosphor_dumper.py and corrector_cpena.py were updated for the 2012 PHOSPHOR analysis 
+# to create the original .txt files for the PhosphorCorrectorFunctor
+
+# Modified_phosphorDumper.py expanded to focus on the 2012 data with more pt bins and bins 
+# of high and low pile up. The output is not used by the PhosphorCorrectorFunctor but can run
+# through ProcessValues.py to produce LaTeX tables to display the resolution and scale values
+
+# PhosphorDumper_2013.py is the updated version of the phosphor_dumper.py for the 2013-2014 analysis
+# with more pt bins for the PhosphorCorrectorFunctor

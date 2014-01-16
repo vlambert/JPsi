@@ -1,0 +1,43 @@
+// ============================================================ //
+//                                                              //
+//      Explanations of the contents of the QsubScript          //
+//    Directories for the 2013 PHOSPHOR MuMuGamma Analysis      //
+//                                                              //  
+//                Valere Lambert, Caltech 2013                  //
+//                                                              //
+// ============================================================ //
+
+# The submission scripts used for the 2013 PHOSPHOR MuMuGamma Analysis are contained within
+# the following directories.
+ 
+QsubScripts_sixie_ExpFit_HNV               - High Pile Up  NVertices > 18
+QsubScripts_sixie_ExpFit_LNV               - Low Pile Up   NVertices < 19
+QsubScripts_sixie_HighR9_ExpFit            - High R9       R9 > 0.94
+QsubScripts_sixie_HighR9_ExpFit_HNV        - High R9 High Pile Up
+QsubScripts_sixie_HighR9_ExpFit_LNV        - High R9 Low Pile Up
+QsubScripts_sixie_LowR9_ExpFit             - Low R9        R9 < 0.94
+QsubScripts_sixie_LowR9_ExpFit_HNV         - Low R9 High Pile Up
+QsubScripts_sixie_LowR9_ExpFit_LNV         - Low R9 Low Pile Up
+
+# Each directory contains sge files for the inputs that read into Phosphor_Interface_ExpFit.py
+# to run PHOSPHOR Fit on that specific bin.  There is an sge file for each of the following categories
+# within the QsubScript directory:
+
+(EB, EE) x pT(10-12 , 12-15 , 15-20 , 20-25 , 25-35 , 35-999, 20-999)
+
+# The following submission scripts are used to read and submit all of the sge files for each respective 
+# QsubScript directory. They also create a corresponding directory under Dir_Results named with the date
+# of submission which will contan a subdirectory for the corresponding submission script.
+
+Phosphor_qsub_sixie_HighR9HighNV.sh 
+Phosphor_qsub_sixie_HighR9LowNV.sh 
+Phosphor_qsub_sixie_HighR9.sh 
+Phosphor_qsub_sixie_HNV.sh 
+Phosphor_qsub_sixie_LNV.sh 
+Phosphor_qsub_sixie_LowR9HighNV.sh 
+Phosphor_qsub_sixie_LowR9LowNV.sh 
+Phosphor_qsub_sixie_LowR9.sh 
+
+# To run all of these submissions at once, one may source the following composite submission script:
+
+run_all2013.sh

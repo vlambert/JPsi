@@ -1,0 +1,4 @@
+BLABLABLA 
+compute-3-10.local
+/home/vlambert/scratch_phosphor/CMSSW_4_2_8/src/JPsi/MuMu/test/escale/phosphor/Phosphor_Interface
+/opt/gridengine/default/spool/compute-3-10/job_scripts/1986517: line 17: /cvmfs/cms.cern.ch/cmsset_default.sh: No such file or directory

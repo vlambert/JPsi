@@ -479,7 +479,7 @@ _files['sixie'] = {
         #'z'   : [ ( 'ZmumuGammaNtuple_DYM50_52X.root' ) ],#Original Line
         #THIS LINE IS USED AS CLOSURE TEST(Must Comment other MC->z)        
     'z': [('MC/small_reweight.root')],
-    'data': [('Data/ZmumuGammaNtuple_Full2012_MuCorr.root')],
+    'data': [('Data/new/MuMuGamma_Data.root')],
     
     }
 

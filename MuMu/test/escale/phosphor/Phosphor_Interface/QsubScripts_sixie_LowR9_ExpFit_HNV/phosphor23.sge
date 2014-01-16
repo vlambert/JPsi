@@ -29,7 +29,7 @@ Data="data"
 NV="High"
 R9Low=0
 R9High=0.94
-PtLow=30
+PtLow=35
 PtHigh=999
 		
 # make directory where to output root file
